@@ -1,0 +1,12 @@
+[{
+  "_id": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "email": "admin@monblog.com",
+  "password": "$2b$10$5wM8WqX8Z4Yq.2kX0Q8p.OjDq4Y5Q3qJY1R2tW3pE9YgWqZjZzDm",
+  "avatarUrl": "../assets/logo.jpg",
+  "username": "admin",
+  "createdAt": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+}]

@@ -11,13 +11,17 @@ exports.create = (req, res, next) => {
 };
 
 exports.getAll = (req, res, next) => {
-    Comment.find().populate('articleId').populate('authorId', 'username')
+    Comment.find()
+        .populate('userId', 'username email avatarUrl')
+        .populate('articleId', 'title slug')
         .then(comments => res.status(200).json(comments))
         .catch(error => res.status(400).json({ error }));
 };
 
 exports.getOne = (req, res, next) => {
     Comment.findOne({ _id: req.params.id })
+        .populate('userId', 'username email avatarUrl')
+        .populate('articleId', 'title slug')
         .then(comment => res.status(200).json(comment))
         .catch(error => res.status(404).json({ error }));
 };

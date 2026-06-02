@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee223"
+  },
+  "name": "Tech",
+  "description": "Actualités et tendances du monde technologique",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee224"
+  },
+  "name": "Développement",
+  "description": "Tutoriels et astuces pour développeurs",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee225"
+  },
+  "name": "Intelligence Artificielle",
+  "description": "Machine learning, deep learning et IA générative",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee226"
+  },
+  "name": "Design Web",
+  "description": "UI, UX, tendances design et outils créatifs",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee227"
+  },
+  "name": "Marketing Digital",
+  "description": "Stratégies SEO, réseaux sociaux et growth hacking",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee228"
+  },
+  "name": "Sécurité Informatique",
+  "description": "Bonnes pratiques, cybersécurité et conformité",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee229"
+  },
+  "name": "Cloud & DevOps",
+  "description": "AWS, Docker, Kubernetes et CI/CD",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee22a"
+  },
+  "name": "Mobile",
+  "description": "Développement iOS, Android et cross-platform",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee22b"
+  },
+  "name": "Startups",
+  "description": "Entrepreneuriat, financement et innovation",
+  "attached_article": 0
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee22c"
+  },
+  "name": "Data Science",
+  "description": "Analyse de données, visualisation et big data",
+  "attached_article": 0
+}]

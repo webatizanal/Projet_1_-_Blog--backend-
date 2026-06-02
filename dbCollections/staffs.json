@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "6a1b06619e6f717dbadee2ac"
+  },
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "role": "editor",
+  "bio": "Développeur full-stack passionné par le web moderne. Créateur de ce blog.",
+  "socialLinks": {
+    "twitter": "https://twitter.com/admin",
+    "github": "https://github.com/admin",
+    "linkedin": "https://linkedin.com/in/admin"
+  },
+  "isActive": true,
+  "joinedAt": {
+    "$date": "2025-01-01T00:00:00.000Z"
+  }
+}]

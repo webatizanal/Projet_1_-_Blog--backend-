@@ -2,7 +2,11 @@ const mongoose = require('mongoose');
 
 const articlesSchema = mongoose.Schema({
     authorAvatar: { type: String, required: false },
-    author: { type: String, required: true },
+    userId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
+    },
     title: { type: String, required: true, maxlength: 200 },
     slug: { type: String, required: false, unique: true },
     excerpt: { type: String, required: true },
@@ -14,7 +18,7 @@ const articlesSchema = mongoose.Schema({
     },
     tags: { type: Array, required: false },
     publishedAt: { type: Date, required: true },
-    readingTime: { type: Number },
+    readingTime: { type: Number }, //en minute
     views: { type: Number },
     likes: { type: Number },
     featuredImage: { type: String, required: true },

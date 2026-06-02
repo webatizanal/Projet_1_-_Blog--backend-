@@ -1,0 +1,292 @@
+[{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee292"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "Comprendre JavaScript : les bases essentielles",
+  "slug": "comprendre-javascript-bases-essentielles",
+  "excerpt": "Un guide complet pour maîtriser les fondamentaux de JavaScript.",
+  "content": "<p>JavaScript est un langage de programmation essentiel pour le développement web...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee223"
+  },
+  "tags": [
+    "javascript",
+    "programmation",
+    "web"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-01T08:00:00.000Z"
+  },
+  "readingTime": 12,
+  "views": 1520,
+  "likes": 87,
+  "featuredImage": "https://picsum.photos/id/1/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee293"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "Introduction à React : les composants fonctionnels",
+  "slug": "introduction-react-composants-fonctionnels",
+  "excerpt": "Apprenez à créer des interfaces modernes avec React.",
+  "content": "<p>React a révolutionné la façon de construire des interfaces utilisateur...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee224"
+  },
+  "tags": [
+    "react",
+    "frontend",
+    "javascript"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-05T10:30:00.000Z"
+  },
+  "readingTime": 10,
+  "views": 980,
+  "likes": 54,
+  "featuredImage": "https://picsum.photos/id/2/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee294"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "CSS Grid vs Flexbox : lequel choisir ?",
+  "slug": "css-grid-vs-flexbox-lequel-choisir",
+  "excerpt": "Comparaison des deux modèles de mise en page CSS.",
+  "content": "<p>CSS Grid et Flexbox sont deux outils puissants...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee224"
+  },
+  "tags": [
+    "css",
+    "grid",
+    "flexbox",
+    "frontend"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-10T14:15:00.000Z"
+  },
+  "readingTime": 8,
+  "views": 2100,
+  "likes": 132,
+  "featuredImage": "https://picsum.photos/id/3/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee295"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "Node.js : créer une API REST avec Express",
+  "slug": "nodejs-api-rest-express",
+  "excerpt": "Tutoriel complet pour construire votre backend.",
+  "content": "<p>Node.js combiné à Express permet de créer rapidement des API robustes...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee224"
+  },
+  "tags": [
+    "nodejs",
+    "express",
+    "api",
+    "backend"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-12T09:00:00.000Z"
+  },
+  "readingTime": 15,
+  "views": 630,
+  "likes": 41,
+  "featuredImage": "https://picsum.photos/id/4/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee296"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "Introduction à MongoDB pour les développeurs SQL",
+  "slug": "introduction-mongodb-developpeurs-sql",
+  "excerpt": "Passer de SQL à NoSQL sans douleur.",
+  "content": "<p>MongoDB est une base de données orientée documents...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee225"
+  },
+  "tags": [
+    "mongodb",
+    "nosql",
+    "database"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-15T11:45:00.000Z"
+  },
+  "readingTime": 9,
+  "views": 870,
+  "likes": 63,
+  "featuredImage": "https://picsum.photos/id/5/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee297"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "Les promesses en JavaScript : guide pratique",
+  "slug": "promesses-javascript-guide-pratique",
+  "excerpt": "Gérez l'asynchrone comme un pro avec les Promises.",
+  "content": "<p>Les promesses (Promise) ont révolutionné la gestion de l'asynchrone...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee225"
+  },
+  "tags": [
+    "javascript",
+    "promises",
+    "async-await"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-18T13:20:00.000Z"
+  },
+  "readingTime": 11,
+  "views": 1450,
+  "likes": 98,
+  "featuredImage": "https://picsum.photos/id/6/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee298"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "Docker pour les débutants",
+  "slug": "docker-pour-debutants",
+  "excerpt": "Conteneurisez vos applications simplement.",
+  "content": "<p>Docker permet d'encapsuler vos applications dans des conteneurs...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee227"
+  },
+  "tags": [
+    "docker",
+    "devops",
+    "conteneurisation"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-20T15:30:00.000Z"
+  },
+  "readingTime": 10,
+  "views": 520,
+  "likes": 37,
+  "featuredImage": "https://picsum.photos/id/7/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee299"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "SEO technique : les bonnes pratiques en 2025",
+  "slug": "seo-technique-bonnes-pratiques-2025",
+  "excerpt": "Optimisez votre site pour les moteurs de recherche.",
+  "content": "<p>Le référencement naturel repose sur des bases techniques solides...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee227"
+  },
+  "tags": [
+    "seo",
+    "marketing",
+    "performance"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-22T09:15:00.000Z"
+  },
+  "readingTime": 8,
+  "views": 340,
+  "likes": 22,
+  "featuredImage": "https://picsum.photos/id/8/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee29a"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "Cybersécurité : les 10 erreurs à éviter",
+  "slug": "cybersecurite-10-erreurs-eviter",
+  "excerpt": "Protégez votre site des attaques courantes.",
+  "content": "<p>La sécurité web est souvent négligée par les développeurs...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee227"
+  },
+  "tags": [
+    "security",
+    "cybersecurite",
+    "protection"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-25T10:00:00.000Z"
+  },
+  "readingTime": 7,
+  "views": 290,
+  "likes": 18,
+  "featuredImage": "https://picsum.photos/id/9/800/450",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee29b"
+  },
+  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "title": "PWA : rendre votre application installable",
+  "slug": "pwa-rendre-application-installable",
+  "excerpt": "Transformez votre site web en application mobile.",
+  "content": "<p>Les Progressive Web Apps combinent le meilleur du web et du natif...</p>",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee227"
+  },
+  "tags": [
+    "pwa",
+    "mobile",
+    "javascript"
+  ],
+  "publishedAt": {
+    "$date": "2025-05-28T12:30:00.000Z"
+  },
+  "readingTime": 9,
+  "views": 410,
+  "likes": 29,
+  "featuredImage": "https://picsum.photos/id/10/800/450",
+  "status": "published"
+}]

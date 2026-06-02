@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee20b"
+  },
+  "email": "jean.dupont@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-01T08:00:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.10"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee20c"
+  },
+  "email": "marie.martin@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-02T10:30:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.20"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee20d"
+  },
+  "email": "pierre.durand@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-03T14:15:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.30"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee20e"
+  },
+  "email": "sophie.lefevre@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-05T09:45:00.000Z"
+  },
+  "unsubscribeAt": {
+    "$date": "2025-05-20T11:00:00.000Z"
+  },
+  "ipAddress": "192.168.1.40"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee20f"
+  },
+  "email": "lucas.bernard@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-07T16:20:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.50"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee210"
+  },
+  "email": "claire.rousseau@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-10T11:00:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.60"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee211"
+  },
+  "email": "thomas.garcia@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-12T13:30:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.70"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee212"
+  },
+  "email": "emilie.blanc@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-15T08:15:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.80"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee213"
+  },
+  "email": "nicolas.moreau@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-18T17:00:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.90"
+},
+{
+  "_id": {
+    "$oid": "6a1ae9e09e6f717dbadee214"
+  },
+  "email": "camille.robert@example.com",
+  "subscribedAt": {
+    "$date": "2025-05-20T10:45:00.000Z"
+  },
+  "unsubscribeAt": null,
+  "ipAddress": "192.168.1.100"
+}]
