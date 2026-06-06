@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // CORS
 app.use((req, res, next) => {
-    const allowedOrigins = ['http://localhost:5173', 'http://localhost:3000'];
+    const allowedOrigins = ['http://localhost:5173', 'http://localhost:3000', 'https://devetdemain.netlify.app'];
     const origin = req.headers.origin;
     
     if (allowedOrigins.includes(origin)) {
