@@ -3,7 +3,8 @@ const Comment = require('../models/Comment');
 exports.create = (req, res, next) => {
     const comment = new Comment({
         ...req.body,
-        authorId: req.auth.userId
+        userId: req.auth.userId,
+        articleId: req.params.id 
     });
     comment.save()
         .then(() => res.status(201).json({ message: 'Commentaire créé !' }))
@@ -11,7 +12,7 @@ exports.create = (req, res, next) => {
 };
 
 exports.getAll = (req, res, next) => {
-    Comment.find()
+    Comment.find({status: {$eq: 'approved'}})
         .populate('userId', 'username email avatarUrl')
         .populate('articleId', 'title slug')
         .then(comments => res.status(200).json(comments))

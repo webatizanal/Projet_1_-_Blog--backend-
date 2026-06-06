@@ -5,6 +5,9 @@ const multer = require('../middleware/multer-config');
 
 router.post('/signup', userController.signup);
 router.post('/login', userController.login);
+router.put('/update-pwd', auth, userController.updatePwd);
+router.get('/token', auth, userController.tokenCheck);
 router.post('/updateavatar', auth, multer, userController.updateAvatar);
+router.delete('/account', auth, userController.deleteAccount);
 
-module.exports = router;
+module.exports = router; 

@@ -5,7 +5,7 @@ const commentSchema = new mongoose.Schema({
     articleId: { type: mongoose.Schema.Types.ObjectId, ref: 'Article', required: true },
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }, 
     createdAt: { type: Date, default: Date.now },
-    status: { type: String, enum: ['pending', 'approved', 'spam'], default: 'pending' }
+    status: { type: String, enum: ['pending', 'approved', 'spam'], default: 'approved' }
 });
 
 module.exports = mongoose.model('Comment', commentSchema);

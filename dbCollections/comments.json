@@ -1,160 +1,82 @@
-[{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee29d"
+[
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee29d" },
+    "content": "Merci pour cet article très instructif !",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee292" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-02T10:15:00.000Z" },
+    "status": "approved"
   },
-  "content": "Merci pour cet article très instructif !",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee273"
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee29e" },
+    "content": "J'ai partagé cet article avec mes collègues.",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee293" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-03T14:30:00.000Z" },
+    "status": "approved"
   },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee29f" },
+    "content": "Super clair, j'ai enfin compris React !",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee294" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-06T09:45:00.000Z" },
+    "status": "approved"
   },
-  "createdAt": {
-    "$date": "2025-05-02T10:15:00.000Z"
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee2a0" },
+    "content": "Très bonne comparaison entre Grid et Flexbox.",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee295" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-11T16:20:00.000Z" },
+    "status": "approved"
   },
-  "status": "approved"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee29e"
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee2a1" },
+    "content": "Pouvez-vous faire un article sur les WebSockets ?",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee296" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-13T11:00:00.000Z" },
+    "status": "pending"
   },
-  "content": "J'ai partagé cet article avec mes collègues.",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee273"
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee2a2" },
+    "content": "Merci, j'attendais un article comme celui-ci.",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee297" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-16T08:30:00.000Z" },
+    "status": "approved"
   },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee2a3" },
+    "content": "Les promesses étaient floues pour moi, plus maintenant !",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee298" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-19T17:45:00.000Z" },
+    "status": "approved"
   },
-  "createdAt": {
-    "$date": "2025-05-03T14:30:00.000Z"
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee2a4" },
+    "content": "Docker change la vie, excellent article.",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee299" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-21T10:30:00.000Z" },
+    "status": "approved"
   },
-  "status": "approved"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee29f"
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee2a5" },
+    "content": "Je vais appliquer ces conseils SEO tout de suite.",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee29a" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-23T14:00:00.000Z" },
+    "status": "approved"
   },
-  "content": "Super clair, j'ai enfin compris React !",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee274"
-  },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
-  },
-  "createdAt": {
-    "$date": "2025-05-06T09:45:00.000Z"
-  },
-  "status": "approved"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee2a0"
-  },
-  "content": "Très bonne comparaison entre Grid et Flexbox.",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee275"
-  },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
-  },
-  "createdAt": {
-    "$date": "2025-05-11T16:20:00.000Z"
-  },
-  "status": "approved"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee2a1"
-  },
-  "content": "Pouvez-vous faire un article sur les WebSockets ?",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee276"
-  },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
-  },
-  "createdAt": {
-    "$date": "2025-05-13T11:00:00.000Z"
-  },
-  "status": "pending"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee2a2"
-  },
-  "content": "Merci, j'attendais un article comme celui-ci.",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee277"
-  },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
-  },
-  "createdAt": {
-    "$date": "2025-05-16T08:30:00.000Z"
-  },
-  "status": "approved"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee2a3"
-  },
-  "content": "Les promesses étaient floues pour moi, plus maintenant !",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee278"
-  },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
-  },
-  "createdAt": {
-    "$date": "2025-05-19T17:45:00.000Z"
-  },
-  "status": "approved"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee2a4"
-  },
-  "content": "Docker change la vie, excellent article.",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee279"
-  },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
-  },
-  "createdAt": {
-    "$date": "2025-05-21T10:30:00.000Z"
-  },
-  "status": "approved"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee2a5"
-  },
-  "content": "Je vais appliquer ces conseils SEO tout de suite.",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee27a"
-  },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
-  },
-  "createdAt": {
-    "$date": "2025-05-23T14:00:00.000Z"
-  },
-  "status": "approved"
-},
-{
-  "_id": {
-    "$oid": "6a1b063a9e6f717dbadee2a6"
-  },
-  "content": "Article à relire absolument !",
-  "articleId": {
-    "$oid": "6a1af0949e6f717dbadee27b"
-  },
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
-  },
-  "createdAt": {
-    "$date": "2025-05-26T09:15:00.000Z"
-  },
-  "status": "approved"
-}]
+  {
+    "_id": { "$oid": "6a1b063a9e6f717dbadee2a6" },
+    "content": "Article à relire absolument !",
+    "articleId": { "$oid": "6a1b06229e6f717dbadee29b" },
+    "userId": { "$oid": "6a1b05509e6f717dbadee290" },
+    "createdAt": { "$date": "2025-05-26T09:15:00.000Z" },
+    "status": "approved"
+  }
+]

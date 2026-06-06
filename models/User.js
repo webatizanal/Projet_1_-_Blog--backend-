@@ -5,9 +5,10 @@ const userSchema = mongoose.Schema({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     username: { type: String, required: true },
+    userRole: { type: String, enum:['admin', 'auteur', 'lecteur'], default: 'lecteur' },
     avatarUrl: { type: String },
     createdAt: { type: Date, default: Date.now }
 });
 
-userSchema.plugin(uniqueValidator);
+userSchema.plugin(uniqueValidator); 
 module.exports = mongoose.model('User', userSchema);

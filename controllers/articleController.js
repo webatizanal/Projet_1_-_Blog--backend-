@@ -1,11 +1,15 @@
 const Article = require('../models/Article');
+const Comment = require('../models/Comment');
 const fs = require('fs');
 const path = require('path');
+const { markdownToHtml } = require('../outils/markdownParser');
+
+
 
 exports.create = (req, res, next) => {
     const articleObject = JSON.parse(req.body.article);
     const article = new Article({
-        ...articleObject,
+        ...articleObject, 
         featuredImage: `${req.protocol}://${req.get('host')}/data_files/img_articles/${req.file.filename}`
     });
     article.save()
@@ -13,16 +17,50 @@ exports.create = (req, res, next) => {
         .catch(error => res.status(400).json({ error }));
 };
 
-exports.getAll = (req, res, next) => {
-    Article.find().populate('categoryId')
+exports.getAllPublished = (req, res, next) => {
+    Article.find({ status: { $eq: 'published'} }).populate('categoryId')
         .then(articles => res.status(200).json(articles))
         .catch(error => res.status(400).json({ error }));
 };
 
-exports.getOne = (req, res, next) => {
-    Article.findOne({ _id: req.params.id }).populate('categoryId')
-        .then(article => res.status(200).json(article))
-        .catch(error => res.status(404).json({ error }));
+exports.getOne = async (req, res, next) => {
+    try {
+        const article = await Article.findOne({ _id: req.params.id })
+            .populate('categoryId')
+            .populate('userId');
+
+        
+        if (!article) {
+            return res.status(404).json({ error: 'Article non trouvé' });
+        }
+
+        // Conversion via l'utilitaire
+        const htmlContent = await markdownToHtml(article.content);
+        article.content = htmlContent 
+        
+        res.status(200).json( article );
+        
+    } catch (error) {
+        console.error('Erreur:', error);
+        res.status(500).json({ error: 'Erreur serveur' });
+    }
+};
+
+exports.dashboardUser = async (req, res, next) => {
+    try {
+        if (!req.auth) {
+            return res.status(401).json({ error: 'Non authentifié' });
+        }
+
+        const articles = await Article.find({ userId: req.auth.userId })
+            .populate('categoryId')
+            .sort({ createdAt: -1 });
+
+        res.status(200).json(articles);
+    } catch (error) {
+        console.error('Erreur:', error);
+        res.status(500).json({ error: 'Erreur serveur' });
+    }
 };
 
 exports.update = async (req, res) => {
@@ -99,3 +137,4 @@ exports.delete = async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 };
+

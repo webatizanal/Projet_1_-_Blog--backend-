@@ -1,12 +1,42 @@
 [{
   "_id": {
+    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  },
+  "email": "gedeonkenwood@gmail.com",
+  "password": "$2b$10$q3bPJNiHCHQ6MA81Ea.XhO2qeJ5vVxbbkGKE2kZP/Y8mefendwjGO",
+  "username": "Gédéon WebAtizanal",
+  "userRole": "admin",
+  "avatarUrl": "../assets/admin.jpg",
+  "createdAt": {
+    "$date": "2026-06-04T20:58:38.081Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
     "$oid": "6a1b05509e6f717dbadee290"
   },
-  "email": "admin@monblog.com",
-  "password": "$2b$10$5wM8WqX8Z4Yq.2kX0Q8p.OjDq4Y5Q3qJY1R2tW3pE9YgWqZjZzDm",
-  "avatarUrl": "../assets/logo.jpg",
-  "username": "admin",
+  "email": "paul@gmail.com",
+  "password": "$2b$10$Th/cwlfBQxSz1TDalGw/RO6iENa02Y4aC3L6EZ2CfxD59qzCVmv9e",
+  "username": "Paul",
+  "userRole": "user",
+  "avatarUrl": "",
   "createdAt": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  }
+    "$date": "2026-06-04T23:11:06.104Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a23dfc15315684f03e8ff1a"
+  },
+  "email": "lecteur@blog.com",
+  "password": "$2b$10$iTJ7dv2RhF308F/.8jlkLOQD.gdzR4XJnAQQPc7OpMYhm0QvGuJnS",
+  "username": "Emmanuel",
+  "userRole": "lecteur",
+  "avatarUrl": "",
+  "createdAt": {
+    "$date": "2026-06-06T08:52:17.312Z"
+  },
+  "__v": 0
 }]

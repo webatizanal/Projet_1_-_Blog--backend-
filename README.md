@@ -21,15 +21,21 @@ Blog full-stack permettant de créer, modifier, supprimer et commenter des artic
 | Outils          | Git, GitHub, Postman (tests API)      |
 
 ## Schema des modèles
-1)  const userSchema = mongoose.Schema({
+1)  userSchema
+```javascript
+    const userSchema = mongoose.Schema({
         email: { type: String, required: true, unique: true },
         password: { type: String, required: true },
+        userRole: { type: String, default: 'user' },
         username: { type: String, required: true },
         avatarUrl: { type: String },
         createdAt: { type: Date, default: Date.now }
     })
+```
 
-2)  const articlesSchema = mongoose.Schema({
+2)  articlesSchema
+```javascript
+    const articlesSchema = mongoose.Schema({
         authorAvatar: { type: String, required: false },
         author: { type: String, required: true },
         title: { type: String, required: true, maxlength: 200 },
@@ -53,22 +59,31 @@ Blog full-stack permettant de créer, modifier, supprimer et commenter des artic
             default: 'draft'
         }
     })
+```
 
-3)  const categorySchema = mongoose.Schem({
+3)  categorySchema
+```javascript
+    const categorySchema = mongoose.Schem({
         name: { type: String, required: true, unique: true },
         description: { type: String, required: true },
         attached_article: { type: Number }
     })
+```
 
-4)  const commentSchema = new mongoose.Schema({
+4)  commentSchema
+```javascript
+    const commentSchema = new mongoose.Schema({
         content: { type: String, required: true },
         articleId: { type: mongoose.Schema.Types.ObjectId, ref: 'Article', required: true },
         authorId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
         createdAt: { type: Date, default: Date.now },
         status: { type: String, enum: ['pending', 'approved', 'spam'], default: 'pending' }
     });
+```
 
-5)  const newsletterSchema = new mongoose.Schema({
+5)  newsletterSchema
+```javascript
+    const newsletterSchema = new mongoose.Schema({
         email: { 
             type: String, 
             required: true, 
@@ -80,8 +95,11 @@ Blog full-stack permettant de créer, modifier, supprimer et commenter des artic
         unsubscribeAt: { type: Date, default: null },
         ipAddress: { type: String }
     });
+```
 
-6)  const partnershipSchema = new mongoose.Schema({
+6)  partnershipSchema
+```javascript
+const partnershipSchema = new mongoose.Schema({
         name: { type: String, required: true, unique: true },
         website: { type: String, required: true },
         logoUrl: { type: String },
@@ -97,8 +115,11 @@ Blog full-stack permettant de créer, modifier, supprimer et commenter des artic
         endsAt: { type: Date },
         createdAt: { type: Date, default: Date.now }
     }); 
+```
 
-7)  const staffSchema = new mongoose.Schema({
+7)  staffSchema
+```javascript
+    const staffSchema = new mongoose.Schema({
         userId: { 
             type: mongoose.Schema.Types.ObjectId, 
             ref: 'User', 
@@ -119,6 +140,7 @@ Blog full-stack permettant de créer, modifier, supprimer et commenter des artic
         isActive: { type: Boolean, default: true },
         joinedAt: { type: Date, default: Date.now }
     });
+```
 
 
 ## 📦 Installation Backend
