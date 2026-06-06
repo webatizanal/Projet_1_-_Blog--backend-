@@ -109,4 +109,158 @@
   },
   "unsubscribeAt": null,
   "ipAddress": "192.168.1.100"
+},
+{
+  "_id": {
+    "$oid": "6a1c94aaf0ec54b6b06a1846"
+  },
+  "email": "test@email.sp",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-05-31T20:06:02.924Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1c9ba26ce5d65f0f54747d"
+  },
+  "email": "gedeonkenwood@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-05-31T20:35:46.657Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1c9bee6ce5d65f0f54747f"
+  },
+  "email": "quizgainenligne@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-05-31T20:37:02.213Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1cf6366ce5d65f0f547488"
+  },
+  "email": "lonise@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-01T03:02:14.195Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1cf9366ce5d65f0f54748d"
+  },
+  "email": "gedeonwood@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-01T03:15:02.307Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1cf9bc6ce5d65f0f54748f"
+  },
+  "email": "gedeonluc@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-01T03:17:16.198Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1cfa596ce5d65f0f547490"
+  },
+  "email": "papa@fj.ff",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-01T03:19:53.888Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1cfa876ce5d65f0f547491"
+  },
+  "email": "hikb@jk.kh",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-01T03:20:39.525Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1cfac06ce5d65f0f547494"
+  },
+  "email": "gedeonfwood@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-01T03:21:36.740Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a1cfae26ce5d65f0f547495"
+  },
+  "email": "thomas@bgh.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-01T03:22:10.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2064a927e7ee9c31bc9c5d"
+  },
+  "email": "wesmiaoxamat@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-03T17:30:17.650Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2065b727e7ee9c31bc9c61"
+  },
+  "email": "gednkenwood@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-03T17:34:47.560Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a20678e27e7ee9c31bc9c6a"
+  },
+  "email": "edeonkenwood@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-03T17:42:38.185Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6a2403aef16d3a203951df0c"
+  },
+  "email": "lonipoise@gmail.com",
+  "unsubscribeAt": null,
+  "subscribedAt": {
+    "$date": "2026-06-06T11:25:34.311Z"
+  },
+  "__v": 0
 }]

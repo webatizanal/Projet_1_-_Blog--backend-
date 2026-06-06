@@ -4,7 +4,7 @@
   },
   "name": "Tech",
   "description": "Actualités et tendances du monde technologique",
-  "attached_article": 0
+  "attached_article": 5
 },
 {
   "_id": {
@@ -12,7 +12,7 @@
   },
   "name": "Développement",
   "description": "Tutoriels et astuces pour développeurs",
-  "attached_article": 0
+  "attached_article": 4
 },
 {
   "_id": {
@@ -20,7 +20,7 @@
   },
   "name": "Intelligence Artificielle",
   "description": "Machine learning, deep learning et IA générative",
-  "attached_article": 0
+  "attached_article": 5
 },
 {
   "_id": {
@@ -36,7 +36,7 @@
   },
   "name": "Marketing Digital",
   "description": "Stratégies SEO, réseaux sociaux et growth hacking",
-  "attached_article": 0
+  "attached_article": 1
 },
 {
   "_id": {
@@ -52,7 +52,7 @@
   },
   "name": "Cloud & DevOps",
   "description": "AWS, Docker, Kubernetes et CI/CD",
-  "attached_article": 0
+  "attached_article": 4
 },
 {
   "_id": {
@@ -60,7 +60,7 @@
   },
   "name": "Mobile",
   "description": "Développement iOS, Android et cross-platform",
-  "attached_article": 0
+  "attached_article": 1
 },
 {
   "_id": {
@@ -68,7 +68,7 @@
   },
   "name": "Startups",
   "description": "Entrepreneuriat, financement et innovation",
-  "attached_article": 0
+  "attached_article": 3
 },
 {
   "_id": {
@@ -76,5 +76,5 @@
   },
   "name": "Data Science",
   "description": "Analyse de données, visualisation et big data",
-  "attached_article": 0
+  "attached_article": 2
 }]

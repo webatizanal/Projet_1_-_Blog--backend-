@@ -1,23 +1,5 @@
 [{
   "_id": {
-    "$oid": "6a1aea059e6f717dbadee216"
-  },
-  "name": "Hostinger",
-  "website": "https://hostinger.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Hébergement web performant",
-  "type": "sponsor",
-  "contactEmail": "partners@hostinger.com",
-  "isActive": true,
-  "startsAt": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  },
-  "endsAt": {
-    "$date": "2025-12-31T23:59:59.000Z"
-  }
-},
-{
-  "_id": {
     "$oid": "6a1aea059e6f717dbadee217"
   },
   "name": "MongoDB Atlas",
@@ -26,56 +8,6 @@
   "description": "Base de données cloud",
   "type": "sponsor",
   "contactEmail": "partners@mongodb.com",
-  "isActive": true,
-  "startsAt": {
-    "$date": "2025-01-01T00:00:00.000Z"
-  },
-  "endsAt": {
-    "$date": "2025-12-31T23:59:59.000Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "6a1aea059e6f717dbadee218"
-  },
-  "name": "Vercel",
-  "website": "https://vercel.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Plateforme de déploiement front-end",
-  "type": "affiliate",
-  "contactEmail": "partners@vercel.com",
-  "isActive": true,
-  "startsAt": {
-    "$date": "2025-02-01T00:00:00.000Z"
-  },
-  "endsAt": null
-},
-{
-  "_id": {
-    "$oid": "6a1aea059e6f717dbadee219"
-  },
-  "name": "Stripe",
-  "website": "https://stripe.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Paiements en ligne",
-  "type": "affiliate",
-  "contactEmail": "partners@stripe.com",
-  "isActive": true,
-  "startsAt": {
-    "$date": "2025-02-01T00:00:00.000Z"
-  },
-  "endsAt": null
-},
-{
-  "_id": {
-    "$oid": "6a1aea059e6f717dbadee21a"
-  },
-  "name": "Cloudflare",
-  "website": "https://cloudflare.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Sécurité et performance web",
-  "type": "sponsor",
-  "contactEmail": "partners@cloudflare.com",
   "isActive": true,
   "startsAt": {
     "$date": "2025-01-01T00:00:00.000Z"
@@ -131,24 +63,6 @@
     "$date": "2025-04-01T00:00:00.000Z"
   },
   "endsAt": null
-},
-{
-  "_id": {
-    "$oid": "6a1aea059e6f717dbadee21e"
-  },
-  "name": "Algolia",
-  "website": "https://algolia.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Moteur de recherche API",
-  "type": "sponsor",
-  "contactEmail": "partners@algolia.com",
-  "isActive": true,
-  "startsAt": {
-    "$date": "2025-05-01T00:00:00.000Z"
-  },
-  "endsAt": {
-    "$date": "2025-06-30T23:59:59.000Z"
-  }
 },
 {
   "_id": {
