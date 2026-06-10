@@ -27,7 +27,7 @@ exports.getOne = async (req, res, next) => {
     try {
         const article = await Article.findOne({ _id: req.params.id })
             .populate('categoryId')
-            .populate('userId');
+            .populate('authorId');
 
         
         if (!article) {

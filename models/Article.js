@@ -1,10 +1,9 @@
 const mongoose = require('mongoose');
 
 const articlesSchema = mongoose.Schema({
-    authorAvatar: { type: String, required: false },
-    userId: {
+    authorId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User',
+        ref: 'Staff',
         required: true
     },
     title: { type: String, required: true, maxlength: 200 },

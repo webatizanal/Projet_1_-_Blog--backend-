@@ -1,19 +1,42 @@
 [{
   "_id": {
-    "$oid": "6a1b06619e6f717dbadee2ac"
+    "$oid": "6a7000000000000000000001"
   },
   "userId": {
     "$oid": "6a21e6fe0b02b12a11c3bd90"
   },
   "role": "editor",
-  "bio": "Développeur full-stack passionné par le web moderne. Créateur de ce blog.",
+  "fullName": "Gedeon WebAtizanal",
+  "bio": "Developpeur full-stack passionne par le web moderne. Createur de ce blog et formateur occasionnel.",
   "socialLinks": {
-    "twitter": "https://twitter.com/admin",
-    "github": "https://github.com/admin",
-    "linkedin": "https://linkedin.com/in/admin"
+    "twitter": "https://twitter.com/gedeon",
+    "github": "https://github.com/gedeon",
+    "linkedin": "https://linkedin.com/in/gedeon"
   },
+  "authorAvatar": "https://avatars.githubusercontent.com/u/1?v=4",
   "isActive": true,
   "joinedAt": {
     "$date": "2025-01-01T00:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a7000000000000000000002"
+  },
+  "userId": {
+    "$oid": "6a1b05509e6f717dbadee290"
+  },
+  "role": "contributor",
+  "fullName": "Paul Martin",
+  "bio": "Auteur passionne par JavaScript, React et les technologies web. J'ecris des tutoriels pour aider les developpeurs a progresser.",
+  "socialLinks": {
+    "twitter": "https://twitter.com/paul",
+    "github": "https://github.com/paul",
+    "linkedin": ""
+  },
+  "authorAvatar": "https://avatars.githubusercontent.com/u/2?v=4",
+  "isActive": true,
+  "joinedAt": {
+    "$date": "2025-03-15T00:00:00.000Z"
   }
 }]

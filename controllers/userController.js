@@ -1,8 +1,48 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const Article = require('../models/Article');
 const fs = require('fs');
 const path = require('path');
+
+
+
+/**
+ * Récupère les statistiques globales :
+ * - nombre de lecteurs (userRole = 'lecteur')
+ * - nombre d'auteurs (userRole différent de 'lecteur' et différent de 'admin' selon ton besoin)
+ * - nombre d'articles publiés (status = 'published')
+ */
+exports.getStats = async (req, res) => {
+    try {
+        // 1. Compter les lecteurs
+        const lecteursCount = await User.countDocuments({ userRole: 'lecteur' });
+        
+        // 2. Compter les auteurs (tous les utilisateurs qui ne sont ni lecteurs ni admins)
+        //    ou simplement tous ceux qui ont un rôle 'auteur' si tu as normalisé
+        const auteursEtAdminsCount = await User.countDocuments({
+            userRole: { $in: ['auteur', 'admin'] }
+        });
+        
+        // 3. Compter les articles publiés
+        const articlesPublishedCount = await Article.countDocuments({ status: 'published' });
+        
+        // 4. Retourner les résultats
+        res.status(200).json({
+            success: true,
+            lecteurs: lecteursCount,
+            auteurs: auteursEtAdminsCount,
+            articlesPublished: articlesPublishedCount
+        });
+        
+    } catch (error) {
+        console.error('Erreur getStats:', error);
+        res.status(500).json({ 
+            success: false, 
+            error: 'Erreur lors de la récupération des statistiques' 
+        });
+    }
+};
 
 exports.signup = (req, res, next) => {
     bcrypt.hash(req.body.password, 10)

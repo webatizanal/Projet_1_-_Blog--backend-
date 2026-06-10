@@ -3,52 +3,36 @@
     "$oid": "6a1aea6a9e6f717dbadee223"
   },
   "name": "Tech",
-  "description": "Actualités et tendances du monde technologique",
-  "attached_article": 5
+  "description": "Actualites et tendances du monde technologique",
+  "attached_article": 6
 },
 {
   "_id": {
     "$oid": "6a1aea6a9e6f717dbadee224"
   },
-  "name": "Développement",
-  "description": "Tutoriels et astuces pour développeurs",
-  "attached_article": 4
+  "name": "Developpement",
+  "description": "Tutoriels et astuces pour developpeurs",
+  "attached_article": 8
 },
 {
   "_id": {
     "$oid": "6a1aea6a9e6f717dbadee225"
   },
   "name": "Intelligence Artificielle",
-  "description": "Machine learning, deep learning et IA générative",
-  "attached_article": 5
+  "description": "Machine learning, deep learning et IA generative",
+  "attached_article": 4
 },
 {
   "_id": {
     "$oid": "6a1aea6a9e6f717dbadee226"
   },
   "name": "Design Web",
-  "description": "UI, UX, tendances design et outils créatifs",
-  "attached_article": 0
+  "description": "UI, UX, tendances design et outils creatifs",
+  "attached_article": 3
 },
 {
   "_id": {
     "$oid": "6a1aea6a9e6f717dbadee227"
-  },
-  "name": "Marketing Digital",
-  "description": "Stratégies SEO, réseaux sociaux et growth hacking",
-  "attached_article": 1
-},
-{
-  "_id": {
-    "$oid": "6a1aea6a9e6f717dbadee228"
-  },
-  "name": "Sécurité Informatique",
-  "description": "Bonnes pratiques, cybersécurité et conformité",
-  "attached_article": 0
-},
-{
-  "_id": {
-    "$oid": "6a1aea6a9e6f717dbadee229"
   },
   "name": "Cloud & DevOps",
   "description": "AWS, Docker, Kubernetes et CI/CD",
@@ -56,25 +40,25 @@
 },
 {
   "_id": {
-    "$oid": "6a1aea6a9e6f717dbadee22a"
+    "$oid": "6a1aea6a9e6f717dbadee228"
   },
-  "name": "Mobile",
-  "description": "Développement iOS, Android et cross-platform",
-  "attached_article": 1
+  "name": "Securite",
+  "description": "Bonnes pratiques, cybersecurite et conformite",
+  "attached_article": 2
 },
 {
   "_id": {
-    "$oid": "6a1aea6a9e6f717dbadee22b"
+    "$oid": "6a1aea6a9e6f717dbadee229"
+  },
+  "name": "Mobile",
+  "description": "Developpement iOS, Android et cross-platform",
+  "attached_article": 2
+},
+{
+  "_id": {
+    "$oid": "6a1aea6a9e6f717dbadee22a"
   },
   "name": "Startups",
   "description": "Entrepreneuriat, financement et innovation",
-  "attached_article": 3
-},
-{
-  "_id": {
-    "$oid": "6a1aea6a9e6f717dbadee22c"
-  },
-  "name": "Data Science",
-  "description": "Analyse de données, visualisation et big data",
-  "attached_article": 2
+  "attached_article": 1
 }]

@@ -2,16 +2,15 @@
   "_id": {
     "$oid": "6a1b06229e6f717dbadee292"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/1.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
   "title": "Comprendre JavaScript : les bases essentielles",
   "slug": "comprendre-javascript-bases-essentielles",
-  "excerpt": "Un guide complet pour maîtriser les fondamentaux de JavaScript.",
-  "content": "# Introduction à JavaScript\n\nJavaScript est un langage de programmation **essentiel** pour le développement web. Créé en 1995, il est devenu incontournable.\n\n## Les variables\n\nEn JavaScript, on déclare des variables avec `let`, `const` ou `var` :\n\n```javascript\nlet age = 25;\nconst nom = \"Jean\";\nvar ancien = \"à éviter\";\n```\n\n## Les fonctions\n\nVoici une fonction fléchée :\n\n```javascript\nconst direBonjour = (nom) => `Bonjour ${nom}`;\n```\n\n> **Astuce** : Utilisez `const` par défaut !\n\n## Conclusion\n\nJavaScript est un langage **puissant** et *polyvalent*.",
+  "excerpt": "Un guide complet pour maitriser les fondamentaux de JavaScript.",
+  "content": "# Comprendre JavaScript\n\nJavaScript est le langage de programmation le plus utilise au monde. Il permet de rendre les pages web interactives.\n\n## Les variables\n\n```javascript\nlet age = 25;\nconst nom = \"Jean\";\nvar ancien = \"a eviter\";\n```\n\nUtilisez `const` par defaut, `let` quand la variable doit changer.\n\n## Les fonctions\n\n```javascript\n// Fonction flechee\nconst direBonjour = (nom) => `Bonjour ${nom}`;\n\n// Fonction classique\nfunction saluer(prenom) {\n    return `Salut ${prenom}`;\n}\n```\n\n## Les tableaux\n\n```javascript\nconst fruits = [\"pomme\", \"banane\", \"orange\"];\nfruits.map(fruit => fruit.toUpperCase());\n```\n\n## Conclusion\n\nMaitrisez ces bases avant d'attaquer les frameworks.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee223"
+    "$oid": "6a1aea6a9e6f717dbadee224"
   },
   "tags": [
     "javascript",
@@ -22,24 +21,23 @@
   "publishedAt": {
     "$date": "2025-05-01T08:00:00.000Z"
   },
-  "readingTime": 12,
+  "readingTime": 8,
   "views": 1520,
   "likes": 87,
-  "featuredImage": "https://picsum.photos/id/1/800/450",
+  "featuredImage": "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee293"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/2.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "Introduction à React : les composants fonctionnels",
+  "title": "Introduction a React : les composants fonctionnels",
   "slug": "introduction-react-composants-fonctionnels",
-  "excerpt": "Apprenez à créer des interfaces modernes avec React.",
-  "content": "# React : La bibliothèque UI moderne\n\nReact a **révolutionné** la façon de construire des interfaces utilisateur.\n\n## Composant fonctionnel\n\nVoici un exemple simple :\n\n```jsx\nfunction Welcome({ name }) {\n    return <h1>Bonjour {name} !</h1>;\n}\n```\n\n## Les Hooks\n\nLes Hooks permettent d'utiliser l'état dans les composants fonctionnels :\n\n```javascript\nimport { useState } from 'react';\n\nfunction Counter() {\n    const [count, setCount] = useState(0);\n    return <button onClick={() => setCount(count + 1)}>{count}</button>;\n}\n```\n\n> React rend le développement frontend **plus agréable** et **plus performant**.",
+  "excerpt": "Apprenez a creer des interfaces modernes avec React.",
+  "content": "# Introduction a React\n\nReact est une bibliotheque pour construire des interfaces utilisateur, developpee par Facebook.\n\n## Premier composant\n\n```jsx\nfunction Welcome({ name }) {\n    return <h1>Bonjour {name}</h1>;\n}\n```\n\n## useState\n\n```jsx\nconst [count, setCount] = useState(0);\n\nreturn (\n    <div>\n        <p>Compteur: {count}</p>\n        <button onClick={() => setCount(count + 1)}>\n            Incrementer\n        </button>\n    </div>\n);\n```\n\n## useEffect\n\n```jsx\nuseEffect(() => {\n    document.title = `Vous avez clique ${count} fois`;\n}, [count]);\n```\n\nLes Hooks sont indispensables en React moderne.",
   "categoryId": {
     "$oid": "6a1aea6a9e6f717dbadee224"
   },
@@ -52,55 +50,52 @@
   "publishedAt": {
     "$date": "2025-05-05T10:30:00.000Z"
   },
-  "readingTime": 10,
+  "readingTime": 9,
   "views": 980,
   "likes": 54,
-  "featuredImage": "https://picsum.photos/id/2/800/450",
+  "featuredImage": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee294"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/3.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
   },
-  "title": "CSS Grid vs Flexbox : lequel choisir ?",
+  "title": "CSS Grid vs Flexbox : lequel choisir",
   "slug": "css-grid-vs-flexbox-lequel-choisir",
-  "excerpt": "Comparaison des deux modèles de mise en page CSS.",
-  "content": "# CSS Grid vs Flexbox\n\nCSS Grid et Flexbox sont deux outils **puissants** pour la mise en page.\n\n## Flexbox (1D)\n\nFlexbox est idéal pour les **lignes** ou **colonnes** :\n\n```css\n.container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n```\n\n## Grid (2D)\n\nGrid excelle pour les **grilles** complètes :\n\n```css\n.grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 20px;\n}\n```\n\n## Quand utiliser quoi ?\n\n- **Flexbox** : navigation, barres d'outils, alignement simple\n- **Grid** : mise en page globale, galeries, tableaux\n\n> **Règle d'or** : Grid pour la structure, Flexbox pour l'alignement !",
+  "excerpt": "Comparaison des deux modeles de mise en page CSS.",
+  "content": "# CSS Grid vs Flexbox\n\n## Flexbox (1D)\n\nFlexbox est ideal pour aligner des elements sur une seule dimension (ligne ou colonne).\n\n```css\n.container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n```\n\n## Grid (2D)\n\nGrid est concu pour les structures bidimensionnelles (lignes ET colonnes).\n\n```css\n.grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 20px;\n}\n```\n\n## Conclusion\n\n- Utilisez Flexbox pour les composants internes (navigation, barre d'outils)\n- Utilisez Grid pour la mise en page globale\n\nLes deux sont complementaires.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee224"
+    "$oid": "6a1aea6a9e6f717dbadee226"
   },
   "tags": [
     "css",
     "grid",
     "flexbox",
-    "frontend",
-    "layout"
+    "frontend"
   ],
   "publishedAt": {
     "$date": "2025-05-10T14:15:00.000Z"
   },
-  "readingTime": 8,
+  "readingTime": 7,
   "views": 2100,
   "likes": 132,
-  "featuredImage": "https://picsum.photos/id/3/800/450",
+  "featuredImage": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee295"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/4.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
   },
-  "title": "Node.js : créer une API REST avec Express",
+  "title": "Node.js : creer une API REST avec Express",
   "slug": "nodejs-api-rest-express",
   "excerpt": "Tutoriel complet pour construire votre backend.",
-  "content": "# API REST avec Node.js et Express\n\nNode.js combiné à Express permet de créer rapidement des API **robustes**.\n\n## Installation\n\n```bash\nnpm init -y\nnpm install express\n```\n\n## Serveur de base\n\n```javascript\nconst express = require('express');\nconst app = express();\n\napp.get('/api/users', (req, res) => {\n    res.json([{ name: \"Jean\" }, { name: \"Marie\" }]);\n});\n\napp.listen(3000, () => console.log('Server started'));\n```\n\n## Routes CRUD\n\n- `GET /api/ressources` → Liste\n- `POST /api/ressources` → Création\n- `PUT /api/ressources/:id` → Modification\n- `DELETE /api/ressources/:id` → Suppression\n\n> Express est le framework **le plus populaire** pour Node.js !",
+  "content": "# API REST avec Express\n\nNode.js et Express forment le duo le plus populaire pour creer des API backend.\n\n## Installation\n\n```bash\nnpm init -y\nnpm install express\nnpm install -D nodemon\n```\n\n## Serveur de base\n\n```javascript\nconst express = require('express');\nconst app = express();\n\napp.use(express.json());\n\napp.get('/api/users', (req, res) => {\n    res.json([{ name: \"Jean\" }, { name: \"Marie\" }]);\n});\n\napp.listen(3000, () => console.log('Server started'));\n```\n\n## Routes CRUD\n\n- GET /ressources - lire la liste\n- POST /ressources - creer une ressource\n- PUT /ressources/:id - modifier\n- DELETE /ressources/:id - supprimer\n\nExpress est simple et puissant.",
   "categoryId": {
     "$oid": "6a1aea6a9e6f717dbadee224"
   },
@@ -108,495 +103,686 @@
     "nodejs",
     "express",
     "api",
-    "backend",
-    "rest"
+    "backend"
   ],
   "publishedAt": {
     "$date": "2025-05-12T09:00:00.000Z"
   },
-  "readingTime": 15,
+  "readingTime": 8,
   "views": 630,
   "likes": 41,
-  "featuredImage": "https://picsum.photos/id/4/800/450",
+  "featuredImage": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee296"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/5.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "Introduction à MongoDB pour les développeurs SQL",
+  "title": "Introduction a MongoDB pour les developpeurs SQL",
   "slug": "introduction-mongodb-developpeurs-sql",
-  "excerpt": "Passer de SQL à NoSQL sans douleur.",
-  "content": "# MongoDB : La base NoSQL orientée documents\n\nMongoDB stocke les données en **JSON** (BSON), pas en tables.\n\n## Comparaison SQL vs MongoDB\n\n| SQL | MongoDB |\n|-----|---------|\n| Table | Collection |\n| Row | Document |\n| Column | Field |\n| JOIN | $lookup ou embedding |\n\n## Exemple de document\n\n```json\n{\n    \"_id\": ObjectId(\"...\"),\n    \"title\": \"Mon article\",\n    \"tags\": [\"javascript\", \"tutoriel\"],\n    \"author\": {\n        \"name\": \"Jean\",\n        \"email\": \"jean@example.com\"\n    }\n}\n```\n\n## Requête typique\n\n```javascript\n// Trouver les articles avec plus de 100 vues\ndb.articles.find({ views: { $gt: 100 } });\n```\n\n> MongoDB est **flexible** et **scalable** horizontalement !",
+  "excerpt": "Passer de SQL a NoSQL sans douleur.",
+  "content": "# MongoDB pour les developpeurs SQL\n\nMongoDB est une base de donnees orientee documents.\n\n## Comparaison\n\n| SQL | MongoDB |\n|-----|---------|\n| Table | Collection |\n| Row | Document |\n| Column | Field |\n| JOIN | Population (populate) |\n\n## Exemple de document\n\n```json\n{\n    \"_id\": ObjectId(\"...\"),\n    \"title\": \"Mon article\",\n    \"tags\": [\"javascript\", \"tutoriel\"],\n    \"author\": {\n        \"name\": \"Jean\",\n        \"email\": \"jean@example.com\"\n    }\n}\n```\n\n## Requete typique\n\n```javascript\ndb.articles.find({ views: { $gt: 100 } });\n```\n\nMongoDB est flexible et scalable.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee225"
+    "$oid": "6a1aea6a9e6f717dbadee224"
   },
   "tags": [
     "mongodb",
     "nosql",
-    "database",
-    "sql"
+    "database"
   ],
   "publishedAt": {
     "$date": "2025-05-15T11:45:00.000Z"
   },
-  "readingTime": 9,
+  "readingTime": 7,
   "views": 870,
   "likes": 63,
-  "featuredImage": "https://picsum.photos/id/5/800/450",
+  "featuredImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=200&h=200&fit=crop",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee297"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/6.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
   },
   "title": "Les promesses en JavaScript : guide pratique",
   "slug": "promesses-javascript-guide-pratique",
-  "excerpt": "Gérez l'asynchrone comme un pro avec les Promises.",
-  "content": "# Promises en JavaScript\n\nLes promesses (Promise) ont **révolutionné** la gestion de l'asynchrone.\n\n## Syntaxe de base\n\n```javascript\nconst maPromesse = new Promise((resolve, reject) => {\n    // Opération asynchrone\n    if (succes) {\n        resolve(valeur);\n    } else {\n        reject(erreur);\n    }\n});\n```\n\n## Chaînage\n\n```javascript\nfetch('/api/user')\n    .then(response => response.json())\n    .then(user => fetch(`/api/posts?userId=${user.id}`))\n    .then(response => response.json())\n    .then(posts => console.log(posts))\n    .catch(error => console.error(error));\n```\n\n## Async/Await (version moderne)\n\n```javascript\nasync function getUserPosts() {\n    try {\n        const user = await fetch('/api/user').then(r => r.json());\n        const posts = await fetch(`/api/posts?userId=${user.id}`).then(r => r.json());\n        console.log(posts);\n    } catch (error) {\n        console.error(error);\n    }\n}\n```\n\n> **Astuce** : Préférez `async/await` pour un code plus lisible !",
+  "excerpt": "Gerer l'asynchrone comme un pro avec les Promises.",
+  "content": "# Promises en JavaScript\n\nLes promesses ont revolutionne la gestion de l'asynchrone.\n\n## Syntaxe de base\n\n```javascript\nconst maPromesse = new Promise((resolve, reject) => {\n    if (succes) {\n        resolve(valeur);\n    } else {\n        reject(erreur);\n    }\n});\n```\n\n## Async/Await\n\n```javascript\nasync function getData() {\n    try {\n        const response = await fetch('/api/data');\n        const data = await response.json();\n        console.log(data);\n    } catch (error) {\n        console.error(error);\n    }\n}\n```\n\nPreferez async/await pour un code plus lisible et maintenable.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee225"
+    "$oid": "6a1aea6a9e6f717dbadee224"
   },
   "tags": [
     "javascript",
     "promises",
-    "async-await",
-    "asynchrone"
+    "async"
   ],
   "publishedAt": {
     "$date": "2025-05-18T13:20:00.000Z"
   },
-  "readingTime": 11,
+  "readingTime": 7,
   "views": 1450,
   "likes": 98,
-  "featuredImage": "https://picsum.photos/id/6/800/450",
+  "featuredImage": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee298"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/7.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "Docker pour les débutants",
+  "title": "Docker pour les debutants",
   "slug": "docker-pour-debutants",
   "excerpt": "Conteneurisez vos applications simplement.",
-  "content": "# Docker : La conteneurisation expliquée\n\nDocker permet d'encapsuler vos applications dans des **conteneurs** isolés.\n\n## Dockerfile basique\n\n```dockerfile\nFROM node:18-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm install\nCOPY . .\nEXPOSE 3000\nCMD [\"npm\", \"start\"]\n```\n\n## Commandes essentielles\n\n```bash\n# Construire l'image\ndocker build -t mon-app .\n\n# Lancer le conteneur\ndocker run -p 3000:3000 mon-app\n\n# Voir les conteneurs actifs\ndocker ps\n\n# Arrêter un conteneur\ndocker stop <container_id>\n```\n\n## Docker Compose\n\n```yaml\nversion: '3'\nservices:\n  web:\n    build: .\n    ports:\n      - \"3000:3000\"\n  mongodb:\n    image: mongo:latest\n    environment:\n      MONGO_INITDB_ROOT_USERNAME: admin\n```\n\n> Docker garantit que ça marche **partout** de la même façon !",
+  "content": "# Docker : La conteneurisation\n\nDocker permet d'encapsuler vos applications dans des conteneurs isoles.\n\n## Dockerfile basique\n\n```dockerfile\nFROM node:18-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm install\nCOPY . .\nEXPOSE 3000\nCMD [\"npm\", \"start\"]\n```\n\n## Commandes essentielles\n\n```bash\ndocker build -t mon-app .\ndocker run -p 3000:3000 mon-app\ndocker ps\ndocker stop <container_id>\n```\n\nDocker garantit que l'application fonctionne partout de la meme maniere.",
   "categoryId": {
     "$oid": "6a1aea6a9e6f717dbadee227"
   },
   "tags": [
     "docker",
     "devops",
-    "conteneurisation",
     "container"
   ],
   "publishedAt": {
     "$date": "2025-05-20T15:30:00.000Z"
   },
-  "readingTime": 10,
+  "readingTime": 7,
   "views": 520,
   "likes": 37,
-  "featuredImage": "https://picsum.photos/id/7/800/450",
+  "featuredImage": "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee299"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/8.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "SEO technique : les bonnes pratiques en 2025",
-  "slug": "seo-technique-bonnes-pratiques-2025",
-  "excerpt": "Optimisez votre site pour les moteurs de recherche.",
-  "content": "# SEO Technique : Guide 2025\n\nLe référencement naturel repose sur des bases techniques **solides**.\n\n## Balises essentielles\n\n```html\n<title>Mon article - Blog</title>\n<meta name=\"description\" content=\"Description de 150-160 caractères\">\n<link rel=\"canonical\" href=\"https://monsite.com/article\">\n```\n\n## Performance\n\n- Utilisez **Lighthouse** pour auditer votre site\n- Optimisez les images avec `srcset`\n- Minifiez CSS/JS\n- Utilisez le **lazy loading** : `<img loading=\"lazy\">`\n\n## Structure d'URL\n\n```\n✅ https://blog.com/css-grid-tutorial\n❌ https://blog.com/p=123\n```\n\n## Fichier robots.txt\n\n```\nUser-agent: *\nAllow: /blog/\nDisallow: /admin/\nSitemap: https://monsite.com/sitemap.xml\n```\n\n> Un site **rapide** et **bien structuré** est mieux référencé !",
+  "title": "Kubernetes : orchestrer vos conteneurs",
+  "slug": "kubernetes-orchestrer-conteneurs",
+  "excerpt": "Decouvrez l'orchestration de conteneurs avec Kubernetes.",
+  "content": "# Kubernetes (K8s)\n\nKubernetes est l'outil standard pour l'orchestration de conteneurs en production.\n\n## Concepts cles\n\n- **Pod** : plus petite unite deployable (1 ou plusieurs conteneurs)\n- **Service** : expose les pods au reseau\n- **Deployment** : gestion des replicas et des mises a jour\n- **Ingress** : routage HTTP externe\n\n## Commandes de base\n\n```bash\nkubectl apply -f deployment.yaml\nkubectl get pods\nkubectl logs <pod-name>\nkubectl delete deployment <name>\n```\n\nKubernetes est complexe mais tres puissant pour les grandes applications.",
   "categoryId": {
     "$oid": "6a1aea6a9e6f717dbadee227"
   },
   "tags": [
-    "seo",
-    "marketing",
-    "performance",
-    "optimisation"
+    "kubernetes",
+    "devops",
+    "orchestration"
   ],
   "publishedAt": {
-    "$date": "2025-05-22T09:15:00.000Z"
+    "$date": "2025-05-22T09:00:00.000Z"
   },
   "readingTime": 8,
-  "views": 340,
-  "likes": 22,
-  "featuredImage": "https://picsum.photos/id/8/800/450",
+  "views": 430,
+  "likes": 28,
+  "featuredImage": "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee29a"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/9.jpg",
-  "userId": {
-    "$oid": "6a21e6fe0b02b12a11c3bd90"
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
   },
-  "title": "Cybersécurité : les 10 erreurs à éviter",
-  "slug": "cybersecurite-10-erreurs-eviter",
-  "excerpt": "Protégez votre site des attaques courantes.",
-  "content": "# Les 10 erreurs de sécurité à éviter\n\nLa sécurité web est souvent **négligée** par les développeurs.\n\n## 1. Ne pas valider les entrées utilisateur\n\n```javascript\n// ❌ Dangereux\napp.post('/comment', (req, res) => {\n    db.query(`INSERT INTO comments VALUES ('${req.body.text}')`);\n});\n\n// ✅ Sécurisé\napp.post('/comment', (req, res) => {\n    db.query('INSERT INTO comments VALUES (?)', [req.body.text]);\n});\n```\n\n## 2. Stocker les mots de passe en clair\n\n```javascript\n// ❌ JAMAIS !\nuser.password = req.body.password;\n\n// ✅ Utilisez bcrypt\nconst bcrypt = require('bcrypt');\nconst hashedPassword = await bcrypt.hash(req.body.password, 10);\n```\n\n## 3. Oublier les en-têtes de sécurité\n\n```http\nContent-Security-Policy: default-src 'self'\nX-Frame-Options: DENY\nX-Content-Type-Options: nosniff\n```\n\n> **Règle d'or** : Ne jamais faire confiance aux données utilisateur !",
+  "title": "AWS pour les developpeurs : les bases",
+  "slug": "aws-pour-developpeurs-bases",
+  "excerpt": "Les services essentiels d'Amazon Web Services.",
+  "content": "# AWS pour les developpeurs\n\nAmazon Web Services est le leader du cloud public.\n\n## Services essentiels\n\n- **EC2** : serveurs virtuels (IaaS)\n- **S3** : stockage objet (fichiers, images)\n- **RDS** : bases de donnees relationnelles\n- **Lambda** : serverless (fonctions)\n- **CloudFront** : CDN\n\n## Commande AWS CLI\n\n```bash\naws s3 ls\naws ec2 describe-instances\naws lambda list-functions\n```\n\nAWS est vaste, mais ces services couvrent 80% des besoins.",
   "categoryId": {
     "$oid": "6a1aea6a9e6f717dbadee227"
   },
   "tags": [
-    "security",
-    "cybersecurite",
-    "protection",
-    "best-practices"
+    "aws",
+    "cloud",
+    "devops"
   ],
   "publishedAt": {
-    "$date": "2025-05-25T10:00:00.000Z"
+    "$date": "2025-05-25T11:30:00.000Z"
   },
   "readingTime": 7,
-  "views": 290,
-  "likes": 18,
-  "featuredImage": "https://picsum.photos/id/9/800/450",
+  "views": 380,
+  "likes": 24,
+  "featuredImage": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee29b"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/10.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "PWA : rendre votre application installable",
-  "slug": "pwa-rendre-application-installable",
-  "excerpt": "Transformez votre site web en application mobile.",
-  "content": "# Progressive Web Apps (PWA)\n\nLes PWA combinent le meilleur du **web** et du **natif**.\n\n## Manifeste.json\n\n```json\n{\n    \"name\": \"Mon Blog PWA\",\n    \"short_name\": \"Blog\",\n    \"start_url\": \"/\",\n    \"display\": \"standalone\",\n    \"theme_color\": \"#3b82f6\",\n    \"icons\": [\n        {\n            \"src\": \"icon-192.png\",\n            \"sizes\": \"192x192\",\n            \"type\": \"image/png\"\n        }\n    ]\n}\n```\n\n## Service Worker\n\n```javascript\n// sw.js\nconst CACHE_NAME = 'blog-v1';\nconst urlsToCache = ['/', '/style.css', '/app.js'];\n\nself.addEventListener('install', event => {\n    event.waitUntil(\n        caches.open(CACHE_NAME)\n            .then(cache => cache.addAll(urlsToCache))\n    );\n});\n\nself.addEventListener('fetch', event => {\n    event.respondWith(\n        caches.match(event.request)\n            .then(response => response || fetch(event.request))\n    );\n});\n```\n\n## Installation\n\n```html\n<script>\nif ('serviceWorker' in navigator) {\n    navigator.serviceWorker.register('/sw.js');\n}\n</script>\n```\n\n> Une PWA peut être installée sur le téléphone de l'utilisateur !",
+  "title": "Le machine learning pour les debutants",
+  "slug": "machine-learning-pour-debutants",
+  "excerpt": "Introduction aux concepts du machine learning et du deep learning.",
+  "content": "# Machine Learning pour debutants\n\nLe machine learning est partout aujourd'hui.\n\n## Types d'apprentissage\n\n- **Supervise** : donnees etiquetees (classification, regression)\n- **Non supervise** : donnees non etiquetees (clustering)\n- **Renforcement** : recompenses/penalites (jeux, robotique)\n\n## Exemple avec Python (scikit-learn)\n\n```python\nfrom sklearn.linear_model import LinearRegression\n\nmodel = LinearRegression()\nmodel.fit(X_train, y_train)\npredictions = model.predict(X_test)\n```\n\n## Bibliotheques populaires\n\n- scikit-learn : classique\n- TensorFlow : deep learning\n- PyTorch : recherche\n\nLe ML est un domaine fascinant qui demande de la pratique.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee227"
+    "$oid": "6a1aea6a9e6f717dbadee225"
   },
   "tags": [
-    "pwa",
-    "mobile",
-    "javascript",
-    "service-worker"
+    "machine-learning",
+    "ia",
+    "data-science"
   ],
   "publishedAt": {
-    "$date": "2025-05-28T12:30:00.000Z"
+    "$date": "2025-05-28T14:00:00.000Z"
   },
-  "readingTime": 9,
-  "views": 410,
-  "likes": 29,
-  "featuredImage": "https://picsum.photos/id/10/800/450",
+  "readingTime": 8,
+  "views": 890,
+  "likes": 67,
+  "featuredImage": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee29c"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/11.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
   },
-  "title": "Git et GitHub : workflow collaboratif",
-  "slug": "git-github-workflow-collaboratif",
-  "excerpt": "Maîtrisez les outils de versionnement de code.",
-  "content": "# Git : Le contrôle de version\n\nGit est **indispensable** pour tout développeur.\n\n## Commandes de base\n\n```bash\ngit init\ngit add .\ngit commit -m \"Initial commit\"\ngit push origin main\n```\n\n## Branches\n\n```bash\ngit branch feature/new-article\ngit checkout feature/new-article\n# ... travailler ...\ngit commit -a -m \"Ajout article\"\ngit push origin feature/new-article\n```\n\n## Pull Request workflow\n\n1. Créer une branche\n2. Commiter les changements\n3. Ouvrir une Pull Request sur GitHub\n4. Faire relire le code\n5. Merger après validation\n\n> Git permet de **travailler à plusieurs** sans se marcher sur les pieds !",
+  "title": "ChatGPT et l'IA generative",
+  "slug": "chatgpt-ia-generative",
+  "excerpt": "Comment l'IA generative change notre facon de travailler.",
+  "content": "# L'IA Generative\n\nL'IA generative cree du texte, des images, du code ou de l'audio a partir de simples descriptions.\n\n## Exemples populaires\n\n- **ChatGPT** : generation de texte et code (OpenAI)\n- **DALL-E** : generation d'images\n- **Midjourney** : art IA\n- **GitHub Copilot** : assistant de code\n\n## Prompt engineering\n\n```\nResume cet article en 3 points:\n- point 1\n- point 2\n- point 3\n```\n\n## Utilisations pour developpeurs\n\n- Generer du code boilerplate\n- Aide au debugging\n- Documentation automatique\n- Tests unitaires\n\nL'IA generative est un outil puissant, pas un remplacement du developpeur.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee226"
+    "$oid": "6a1aea6a9e6f717dbadee225"
   },
   "tags": [
-    "git",
-    "github",
-    "version-control",
-    "collaboration"
+    "ia",
+    "chatgpt",
+    "generative-ai"
   ],
   "publishedAt": {
-    "$date": "2025-05-30T09:00:00.000Z"
+    "$date": "2025-06-01T09:45:00.000Z"
   },
-  "readingTime": 8,
-  "views": 680,
-  "likes": 45,
-  "featuredImage": "https://picsum.photos/id/11/800/450",
+  "readingTime": 7,
+  "views": 1250,
+  "likes": 89,
+  "featuredImage": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee29d"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/12.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "TypeScript : Pourquoi et comment passer de JS",
-  "slug": "typescript-pourquoi-comment-passera-js",
-  "excerpt": "Ajoutez de la sécurité à votre JavaScript avec TypeScript.",
-  "content": "# TypeScript : JavaScript avec types\n\nTypeScript ajoute une **couche de sécurité** à JavaScript.\n\n## Types de base\n\n```typescript\nlet name: string = \"Jean\";\nlet age: number = 25;\nlet isActive: boolean = true;\nlet tags: string[] = [\"js\", \"ts\"];\n```\n\n## Interfaces\n\n```typescript\ninterface Article {\n    id: string;\n    title: string;\n    views: number;\n    publishedAt?: Date; // Optionnel\n}\n\nfunction displayArticle(article: Article): void {\n    console.log(article.title);\n}\n```\n\n## Génériques\n\n```typescript\nfunction identity<T>(arg: T): T {\n    return arg;\n}\n\nlet result = identity<string>(\"hello\");\n```\n\n> TypeScript détecte les erreurs **avant** l'exécution !",
+  "title": "UI/UX Design : les principes fondamentaux",
+  "slug": "ui-ux-design-principes-fondamentaux",
+  "excerpt": "Les bases du design d'interface utilisateur.",
+  "content": "# UI/UX Design\n\nUn bon design ameliore l'experience utilisateur et la conversion.\n\n## Principes UX (Experience Utilisateur)\n\n- Utilisateur au centre\n- Simplicite et clarte\n- Coherence dans toute l'application\n- Feedback pour chaque action\n- Accessibilite (a11y)\n\n## Principes UI (Interface Utilisateur)\n\n- Hierarchie visuelle (tailles, couleurs)\n- Contraste suffisant\n- Espacement consistant\n- Typographie lisible\n\n## Outils de design\n\n- **Figma** : design collaboratif\n- **Adobe XD** : prototypage\n- **Sketch** : UI design\n\nUn bon design n'est pas qu'une question d'esthetique, c'est une question d'utilisabilite.",
   "categoryId": {
     "$oid": "6a1aea6a9e6f717dbadee226"
   },
   "tags": [
-    "typescript",
-    "javascript",
-    "typing",
-    "frontend"
+    "ui",
+    "ux",
+    "design"
   ],
   "publishedAt": {
-    "$date": "2025-06-01T14:00:00.000Z"
+    "$date": "2025-06-03T10:00:00.000Z"
   },
-  "readingTime": 10,
-  "views": 430,
-  "likes": 52,
-  "featuredImage": "https://picsum.photos/id/12/800/450",
+  "readingTime": 7,
+  "views": 560,
+  "likes": 42,
+  "featuredImage": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee29e"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/13.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
   },
-  "title": "Tailwind CSS : l'utilité avant tout",
-  "slug": "tailwind-css-utilite-avant-tout",
-  "excerpt": "Découvrez le framework CSS qui change la donne.",
-  "content": "# Tailwind CSS : Utility-first\n\nTailwind est un framework CSS qui utilise des classes **utilitaires**.\n\n## Exemple\n\n```html\n<div class=\"max-w-sm mx-auto bg-white rounded-xl shadow-md overflow-hidden\">\n    <div class=\"p-6\">\n        <h2 class=\"text-xl font-bold text-gray-900\">Mon article</h2>\n        <p class=\"text-gray-600\">Contenu de l'article...</p>\n    </div>\n</div>\n```\n\n## Personnalisation\n\n```javascript\n// tailwind.config.js\nmodule.exports = {\n    theme: {\n        extend: {\n            colors: {\n                'blog-primary': '#3b82f6',\n            }\n        }\n    }\n}\n```\n\n## Avantages\n\n- Pas de CSS à écrire (ou presque)\n- Design cohérent\n- Taille finale minimisée (PurgeCSS)\n\n> Tailwind rend le CSS **rapide** et **maintenable** !",
+  "title": "React Native : developpez des apps mobiles",
+  "slug": "react-native-developpez-apps-mobiles",
+  "excerpt": "Creez des applications iOS et Android avec React.",
+  "content": "# React Native\n\nReact Native permet de developper des applications mobiles natives avec JavaScript et React.\n\n## Installation\n\n```bash\nnpx react-native init MonApp\ncd MonApp\nnpx react-native run-android  # ou run-ios\n```\n\n## Composant simple\n\n```jsx\nimport { View, Text, StyleSheet } from 'react-native';\n\nfunction App() {\n    return (\n        <View style={styles.container}>\n            <Text>Bonjour React Native</Text>\n        </View>\n    );\n}\n\nconst styles = StyleSheet.create({\n    container: {\n        flex: 1,\n        justifyContent: 'center',\n        alignItems: 'center'\n    }\n});\n```\n\n## Avantages\n\n- Code partage entre iOS et Android\n- Performance native\n- Grande communaute\n- Reutilisation des concepts React\n\nReact Native est utilise par Facebook, Instagram, Uber Eats.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee224"
+    "$oid": "6a1aea6a9e6f717dbadee229"
   },
   "tags": [
-    "tailwind",
-    "css",
-    "frontend",
-    "utility-first"
+    "react-native",
+    "mobile",
+    "ios",
+    "android"
   ],
   "publishedAt": {
-    "$date": "2025-06-03T11:30:00.000Z"
+    "$date": "2025-06-05T14:30:00.000Z"
   },
-  "readingTime": 7,
-  "views": 890,
-  "likes": 67,
-  "featuredImage": "https://picsum.photos/id/13/800/450",
+  "readingTime": 8,
+  "views": 420,
+  "likes": 31,
+  "featuredImage": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee29f"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/14.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "WebAssembly : le futur du web performant",
-  "slug": "webassembly-futur-web-performant",
-  "excerpt": "Exécutez du code bas niveau dans le navigateur.",
-  "content": "# WebAssembly (WASM)\n\nWebAssembly permet d'exécuter du code **bas niveau** dans le navigateur.\n\n## Avantages\n\n- Performances proches du natif\n- Langages supportés : C, C++, Rust, Go, etc.\n- Interopérable avec JavaScript\n\n## Exemple avec Rust\n\n```rust\n// lib.rs\n#[no_mangle]\npub fn add(a: i32, b: i32) -> i32 {\n    a + b\n}\n```\n\nCompilation :\n\n```bash\nrustup target add wasm32-unknown-unknown\nrustc --target wasm32-unknown-unknown -O --crate-type=cdylib lib.rs\n```\n\nUtilisation en JS :\n\n```javascript\nWebAssembly.instantiateStreaming(fetch('lib.wasm'))\n    .then(obj => {\n        const result = obj.instance.exports.add(5, 3);\n        console.log(result); // 8\n    });\n```\n\n> WASM est idéal pour les jeux, le montage vidéo, et les calculs intensifs !",
+  "title": "Lever des fonds pour sa startup",
+  "slug": "lever-fonds-pour-startup",
+  "excerpt": "Les etapes cles pour financer votre projet.",
+  "content": "# Lever des fonds pour sa startup\n\nLe financement est un levier de croissance pour les startups.\n\n## Etapes classiques\n\n1. **Amorcage (bootstrapping)** : fonds propres, famille\n2. **Business angels** : investisseurs individuels\n3. **Capital risque (VC)** : fonds d'investissement\n4. **Introduction en bourse (IPO)** : marche boursier\n\n## Conseils pour pitcher\n\n- Connaissez votre marche\n- Montrez la traction (utilisateurs, revenus)\n- Equipe solide\n- Projections realistes\n\n## Plateformes de crowdfunding\n\n- Kickstarter (produits creatifs)\n- Ulule (Europe)\n- Seedrs (equity crowdfunding)\n\nLe financement n'est pas une fin en soi, c'est un moyen de grandir.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee226"
+    "$oid": "6a1aea6a9e6f717dbadee22a"
   },
   "tags": [
-    "webassembly",
-    "wasm",
-    "performance",
-    "rust"
+    "startup",
+    "financement",
+    "business"
   ],
   "publishedAt": {
-    "$date": "2025-06-05T08:45:00.000Z"
+    "$date": "2025-06-07T08:15:00.000Z"
   },
-  "readingTime": 9,
+  "readingTime": 7,
   "views": 310,
-  "likes": 28,
-  "featuredImage": "https://picsum.photos/id/14/800/450",
+  "likes": 22,
+  "featuredImage": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee2a0"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/15.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "Next.js : le framework React full-stack",
-  "slug": "nextjs-framework-react-fullstack",
-  "excerpt": "Découvrez les fonctionnalités avancées de Next.js.",
-  "content": "# Next.js : React côté serveur\n\nNext.js étend React avec des fonctionnalités **puissantes**.\n\n## Pages et routage\n\n```javascript\n// pages/blog/[slug].js\nexport default function Article({ article }) {\n    return <h1>{article.title}</h1>;\n}\n\nexport async function getServerSideProps({ params }) {\n    const article = await fetchArticle(params.slug);\n    return { props: { article } };\n}\n```\n\n## API Routes\n\n```javascript\n// pages/api/articles.js\nexport default function handler(req, res) {\n    res.status(200).json({ articles: [...] });\n}\n```\n\n## Image Optimization\n\n```jsx\nimport Image from 'next/image';\n\n<Image \n    src=\"/photo.jpg\" \n    width={800} \n    height={450} \n    alt=\"Description\"\n/>\n```\n\n> Next.js est le framework React le plus populaire pour le **SSR** et le **SSG** !",
+  "title": "Securiser son application web",
+  "slug": "securiser-application-web",
+  "excerpt": "Les bonnes pratiques pour proteger votre site.",
+  "content": "# Securite web\n\nLa securite est un processus continu, pas une fonctionnalite optionnelle.\n\n## Bonnes pratiques\n\n### 1. Validez les entrees utilisateur\n\n```javascript\n// Contre les XSS\nconst sanitized = DOMPurify.sanitize(userInput);\n```\n\n### 2. Utilisez des requetes parametrees (SQL injection)\n\n```sql\n-- A eviter\nSELECT * FROM users WHERE id = '${id}';\n\n-- Securise\nSELECT * FROM users WHERE id = ?;\n```\n\n### 3. Hash des mots de passe (bcrypt)\n\n```javascript\nconst bcrypt = require('bcrypt');\nconst hash = await bcrypt.hash(password, 10);\n```\n\n### 4. En-tetes de securite (helmet.js)\n\n```javascript\nconst helmet = require('helmet');\napp.use(helmet());\n```\n\n### 5. Authentification JWT\n\n- Tokens avec expiration courte\n- Stockage securise (httpOnly cookies)\n\nLa securite n'est jamais acquise, restez vigilant.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee224"
+    "$oid": "6a1aea6a9e6f717dbadee228"
   },
   "tags": [
-    "nextjs",
-    "react",
-    "ssr",
-    "frontend"
+    "security",
+    "cybersecurite",
+    "protection"
   ],
   "publishedAt": {
-    "$date": "2025-06-07T16:20:00.000Z"
+    "$date": "2025-06-09T11:00:00.000Z"
   },
-  "readingTime": 11,
-  "views": 720,
-  "likes": 56,
-  "featuredImage": "https://picsum.photos/id/15/800/450",
+  "readingTime": 8,
+  "views": 280,
+  "likes": 19,
+  "featuredImage": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee2a1"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/16.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
   },
-  "title": "GraphQL vs REST : comparaison complète",
-  "slug": "graphql-vs-rest-comparaison-complete",
-  "excerpt": "Quel choix d'API pour votre projet ?",
-  "content": "# GraphQL vs REST\n\nGraphQL et REST sont deux approches pour **concevoir des API**.\n\n## REST\n\n```http\nGET /api/users/1\nGET /api/users/1/posts\n```\n\n## GraphQL\n\n```graphql\nquery {\n    user(id: 1) {\n        name\n        posts {\n            title\n            content\n        }\n    }\n}\n```\n\n## Avantages GraphQL\n\n- Une seule requête\n- Pas de sur-fetching ou sous-fetching\n- Typage fort (Schema)\n- Documentation automatique\n\n## Avantages REST\n\n- Simplicité\n- Cache HTTP natif\n- Large adoption\n\n> GraphQL est idéal pour les applications complexes, REST pour les APIs simples !",
+  "title": "Git et GitHub : workflow collaboratif",
+  "slug": "git-github-workflow-collaboratif",
+  "excerpt": "Maitrisez les outils de versionnement de code.",
+  "content": "# Git et GitHub\n\nGit est indispensable pour travailler en equipe et suivre l'historique du code.\n\n## Commandes de base\n\n```bash\ngit init\ngit add .\ngit commit -m \"message clair\"\ngit push origin main\ngit pull origin main\n```\n\n## Branches\n\n```bash\ngit branch feature/nouvelle-fonctionnalite\ngit checkout feature/nouvelle-fonctionnalite\ngit checkout main\ngit merge feature/nouvelle-fonctionnalite\n```\n\n## Workflow Pull Request (GitHub)\n\n1. Creer une branche\n2. Pusher la branche\n3. Ouvrir une Pull Request\n4. Faire relire le code (review)\n5. Merger apres validation\n\nGit permet de collaborer sans se marcher sur les pieds.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee226"
+    "$oid": "6a1aea6a9e6f717dbadee224"
   },
   "tags": [
-    "graphql",
-    "rest",
-    "api",
-    "backend"
+    "git",
+    "github",
+    "version-control"
   ],
   "publishedAt": {
-    "$date": "2025-06-09T10:15:00.000Z"
+    "$date": "2025-06-11T09:00:00.000Z"
   },
-  "readingTime": 10,
-  "views": 560,
-  "likes": 44,
-  "featuredImage": "https://picsum.photos/id/16/800/450",
+  "readingTime": 7,
+  "views": 680,
+  "likes": 45,
+  "featuredImage": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee2a2"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/17.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
   },
-  "title": "Jest : tester votre code JavaScript",
-  "slug": "jest-tester-code-javascript",
-  "excerpt": "Mettez en place des tests automatisés avec Jest.",
-  "content": "# Jest : Framework de test\n\nJest est le framework de test le plus **populaire** pour JavaScript.\n\n## Installation\n\n```bash\nnpm install --save-dev jest\n```\n\n## Premier test\n\n```javascript\n// sum.js\nfunction sum(a, b) {\n    return a + b;\n}\nmodule.exports = sum;\n\n// sum.test.js\nconst sum = require('./sum');\n\ntest('adds 1 + 2 to equal 3', () => {\n    expect(sum(1, 2)).toBe(3);\n});\n```\n\n## Test async\n\n```javascript\ntest('fetch user', async () => {\n    const user = await fetchUser();\n    expect(user.name).toBe('Jean');\n});\n```\n\n## Mocks\n\n```javascript\nconst mockFn = jest.fn();\nmockFn.mockReturnValue(42);\n\nexpect(mockFn()).toBe(42);\n```\n\n> Les tests **automatisés** vous évitent des bugs en production !",
+  "title": "TypeScript : pourquoi et comment passer de JS",
+  "slug": "typescript-pourquoi-comment-passer-de-js",
+  "excerpt": "Ajoutez de la securite a votre JavaScript avec TypeScript.",
+  "content": "# TypeScript\n\nTypeScript ajoute une couche de types a JavaScript.\n\n## Installation\n\n```bash\nnpm install -g typescript\ntsc --init\n```\n\n## Types de base\n\n```typescript\nlet name: string = \"Jean\";\nlet age: number = 25;\nlet isActive: boolean = true;\nlet tags: string[] = [\"js\", \"ts\"];\n```\n\n## Interface\n\n```typescript\ninterface User {\n    id: string;\n    name: string;\n    email: string;\n}\n\nfunction displayUser(user: User): void {\n    console.log(user.name);\n}\n```\n\n## Generiques\n\n```typescript\nfunction identity<T>(arg: T): T {\n    return arg;\n}\n\nlet result = identity<string>(\"hello\");\n```\n\nTypeScript detecte les erreurs avant l'execution, ce qui le rend ideal pour les gros projets.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee228"
+    "$oid": "6a1aea6a9e6f717dbadee224"
   },
   "tags": [
-    "jest",
-    "testing",
+    "typescript",
     "javascript",
-    "unit-test"
+    "typing"
   ],
   "publishedAt": {
-    "$date": "2025-06-11T13:40:00.000Z"
+    "$date": "2025-06-13T14:00:00.000Z"
   },
-  "readingTime": 8,
-  "views": 390,
-  "likes": 31,
-  "featuredImage": "https://picsum.photos/id/17/800/450",
+  "readingTime": 7,
+  "views": 430,
+  "likes": 52,
+  "featuredImage": "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee2a3"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/18.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "PostgreSQL pour les développeurs MongoDB",
-  "slug": "postgresql-developpeurs-mongodb",
-  "excerpt": "Passer de NoSQL à SQL sans crainte.",
-  "content": "# PostgreSQL : La référence SQL\n\nPostgreSQL est une base de données relationnelle **puissante**.\n\n## Concepts clés\n\n| MongoDB | PostgreSQL |\n|---------|------------|\n| Collection | Table |\n| Document | Row |\n| Field | Column |\n| $lookup | JOIN |\n\n## Schéma\n\n```sql\nCREATE TABLE articles (\n    id SERIAL PRIMARY KEY,\n    title VARCHAR(255) NOT NULL,\n    content TEXT,\n    views INTEGER DEFAULT 0,\n    created_at TIMESTAMP DEFAULT NOW()\n);\n```\n\n## Requête\n\n```sql\nSELECT title, views \nFROM articles \nWHERE views > 100 \nORDER BY views DESC \nLIMIT 10;\n```\n\n## Relations\n\n```sql\nCREATE TABLE comments (\n    id SERIAL PRIMARY KEY,\n    article_id INTEGER REFERENCES articles(id),\n    text TEXT NOT NULL\n);\n```\n\n> PostgreSQL excelle pour les données **relationnelles** et les requêtes **complexes** !",
+  "title": "Tailwind CSS : l'utilite avant tout",
+  "slug": "tailwind-css-utilite-avant-tout",
+  "excerpt": "Decouvrez le framework CSS qui change la donne.",
+  "content": "# Tailwind CSS\n\nTailwind est un framework CSS utilitaire qui accelere le developpement front-end.\n\n## Installation\n\n```bash\nnpm install -D tailwindcss\nnpx tailwindcss init\n```\n\n## Utilisation\n\n```html\n<div class=\"bg-blue-500 text-white p-4 rounded-lg shadow-md\">\n    <h2 class=\"text-xl font-bold\">Bonjour Tailwind</h2>\n    <p class=\"text-sm\">Ceci est un composant stylise en quelques classes.</p>\n    <button class=\"mt-2 bg-white text-blue-500 px-4 py-2 rounded\">\n        Action\n    </button>\n</div>\n```\n\n## Avantages\n\n- Pas de CSS a ecrire\n- Design coherent (systeme de design)\n- Taille finale minimale (purge CSS)\n- Personnalisable via tailwind.config.js\n\nTailwind est adopte par de nombreux projets modernes pour sa productivite.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee225"
+    "$oid": "6a1aea6a9e6f717dbadee224"
   },
   "tags": [
-    "postgresql",
-    "sql",
-    "database",
-    "rdbms"
+    "tailwind",
+    "css",
+    "frontend"
   ],
   "publishedAt": {
-    "$date": "2025-06-13T09:30:00.000Z"
+    "$date": "2025-06-15T11:30:00.000Z"
   },
-  "readingTime": 9,
-  "views": 280,
-  "likes": 19,
-  "featuredImage": "https://picsum.photos/id/18/800/450",
+  "readingTime": 7,
+  "views": 890,
+  "likes": 67,
+  "featuredImage": "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee2a4"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/women/19.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "WebSocket : communication temps réel",
-  "slug": "websocket-communication-temps-reel",
-  "excerpt": "Créez des applications interactives avec WebSocket.",
-  "content": "# WebSocket : Le temps réel\n\nWebSocket permet une communication **bidirectionnelle** entre client et serveur.\n\n## Socket.IO (Node.js)\n\n```javascript\n// Serveur\nconst io = require('socket.io')(server);\n\nio.on('connection', (socket) => {\n    console.log('Client connecté');\n    \n    socket.on('chat message', (msg) => {\n        io.emit('chat message', msg);\n    });\n});\n```\n\n```javascript\n// Client\nconst socket = io();\n\nsocket.emit('chat message', 'Hello World!');\n\nsocket.on('chat message', (msg) => {\n    console.log('Message reçu:', msg);\n});\n```\n\n## Cas d'usage\n\n- Chat temps réel\n- Notifications push\n- Jeux multijoueurs\n- Collaboration en direct\n\n> WebSocket est **plus rapide** que HTTP pour les mises à jour fréquentes !",
+  "title": "WebAssembly : le futur du web performant",
+  "slug": "webassembly-futur-web-performant",
+  "excerpt": "Executez du code bas niveau dans le navigateur.",
+  "content": "# WebAssembly (WASM)\n\nWebAssembly permet d'executer du code bas niveau (C, C++, Rust, Go) dans le navigateur a des vitesses proches du natif.\n\n## Avantages\n\n- Performances excellentes\n- Langages multiples\n- Interoperable avec JavaScript\n- Securite (sandbox)\n\n## Exemple avec Rust\n\n```rust\n// lib.rs\n#[no_mangle]\npub fn add(a: i32, b: i32) -> i32 {\n    a + b\n}\n```\n\nCompilation :\n\n```bash\nrustup target add wasm32-unknown-unknown\nrustc --target wasm32-unknown-unknown -O --crate-type=cdylib lib.rs\n```\n\nUtilisation en JavaScript :\n\n```javascript\nWebAssembly.instantiateStreaming(fetch('lib.wasm'))\n    .then(obj => {\n        const result = obj.instance.exports.add(5, 3);\n        console.log(result); // 8\n    });\n```\n\nWASM est ideal pour les jeux, le montage video et les calculs intensifs.",
   "categoryId": {
-    "$oid": "6a1aea6a9e6f717dbadee226"
+    "$oid": "6a1aea6a9e6f717dbadee223"
   },
   "tags": [
-    "websocket",
-    "socketio",
-    "realtime",
-    "nodejs"
+    "webassembly",
+    "wasm",
+    "performance"
   ],
   "publishedAt": {
-    "$date": "2025-06-15T14:50:00.000Z"
+    "$date": "2025-06-17T08:45:00.000Z"
   },
   "readingTime": 8,
-  "views": 470,
-  "likes": 38,
-  "featuredImage": "https://picsum.photos/id/19/800/450",
+  "views": 310,
+  "likes": 28,
+  "featuredImage": "https://images.unsplash.com/photo-1623479322729-28b25c16b011?w=800",
   "status": "published"
 },
 {
   "_id": {
     "$oid": "6a1b06229e6f717dbadee2a5"
   },
-  "authorAvatar": "https://randomuser.me/api/portraits/men/20.jpg",
-  "userId": {
-    "$oid": "6a1b05509e6f717dbadee290"
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
   },
-  "title": "Les design patterns en JavaScript",
-  "slug": "design-patterns-javascript",
-  "excerpt": "Améliorez votre code avec les patterns classiques.",
-  "content": "# Design Patterns en JavaScript\n\nLes design patterns sont des solutions **réutilisables** à des problèmes courants.\n\n## Module Pattern\n\n```javascript\nconst UserModule = (function() {\n    let users = [];\n    \n    return {\n        addUser: (user) => users.push(user),\n        getUsers: () => [...users]\n    };\n})();\n```\n\n## Singleton\n\n```javascript\nclass Database {\n    constructor() {\n        if (!Database.instance) {\n            Database.instance = this;\n        }\n        return Database.instance;\n    }\n}\n```\n\n## Observer Pattern\n\n```javascript\nclass EventEmitter {\n    constructor() {\n        this.events = {};\n    }\n    \n    on(event, listener) {\n        if (!this.events[event]) this.events[event] = [];\n        this.events[event].push(listener);\n    }\n    \n    emit(event, data) {\n        this.events[event]?.forEach(listener => listener(data));\n    }\n}\n```\n\n> Les design patterns rendent le code plus **maintenable** et **réutilisable** !",
+  "title": "Next.js : le framework React full-stack",
+  "slug": "nextjs-framework-react-fullstack",
+  "excerpt": "Decouvrez les fonctionnalites avancees de Next.js.",
+  "content": "# Next.js\n\nNext.js etend React avec des fonctionnalites puissantes comme le SSR et le SSG.\n\n## Pages et routage\n\n```jsx\n// pages/blog/[slug].js\nexport default function Article({ article }) {\n    return <h1>{article.title}</h1>;\n}\n\nexport async function getServerSideProps({ params }) {\n    const article = await fetchArticle(params.slug);\n    return { props: { article } };\n}\n```\n\n## API Routes\n\n```jsx\n// pages/api/articles.js\nexport default function handler(req, res) {\n    res.status(200).json({ articles: [...] });\n}\n```\n\n## Avantages\n\n- SSR (Server Side Rendering)\n- SSG (Static Site Generation)\n- Routage automatique\n- Optimisation des images (next/image)\n- Support TypeScript natif\n\nNext.js est le framework React le plus populaire pour la production.",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee224"
+  },
+  "tags": [
+    "nextjs",
+    "react",
+    "ssr"
+  ],
+  "publishedAt": {
+    "$date": "2025-06-19T16:20:00.000Z"
+  },
+  "readingTime": 8,
+  "views": 720,
+  "likes": 56,
+  "featuredImage": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=800",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee2a6"
+  },
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
+  },
+  "title": "GraphQL vs REST : comparaison complete",
+  "slug": "graphql-vs-rest-comparaison-complete",
+  "excerpt": "Quel choix d'API pour votre projet",
+  "content": "# GraphQL vs REST\n\nGraphQL et REST sont deux approches pour concevoir des API.\n\n## GraphQL\n\n```graphql\nquery {\n    user(id: 1) {\n        name\n        email\n        posts {\n            title\n            content\n        }\n    }\n}\n```\n\n## REST\n\n```\nGET /users/1\nGET /users/1/posts\n```\n\n## Avantages GraphQL\n\n- Une seule requete\n- Pas de sur-fetching ou sous-fetching\n- Typage fort (schema)\n- Documentation automatique (GraphiQL)\n\n## Avantages REST\n\n- Simplicite\n- Cache HTTP natif\n- Large adoption\n\n**Conclusion** : GraphQL pour les apps complexes avec besoins de donnees varies, REST pour les APIs simples ou standards.",
   "categoryId": {
     "$oid": "6a1aea6a9e6f717dbadee223"
   },
   "tags": [
-    "design-patterns",
-    "javascript",
-    "architecture",
-    "best-practices"
+    "graphql",
+    "rest",
+    "api"
   ],
   "publishedAt": {
-    "$date": "2025-06-17T11:00:00.000Z"
+    "$date": "2025-06-21T10:15:00.000Z"
   },
-  "readingTime": 12,
+  "readingTime": 7,
+  "views": 560,
+  "likes": 44,
+  "featuredImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee2a7"
+  },
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
+  },
+  "title": "Jest : tester votre code JavaScript",
+  "slug": "jest-tester-code-javascript",
+  "excerpt": "Mettez en place des tests automatises avec Jest.",
+  "content": "# Jest : Framework de test\n\nJest est le framework de test le plus populaire pour JavaScript.\n\n## Installation\n\n```bash\nnpm install --save-dev jest\n```\n\n## Premier test\n\n```javascript\n// sum.js\nfunction sum(a, b) {\n    return a + b;\n}\n\n// sum.test.js\ntest('adds 1 + 2 to equal 3', () => {\n    expect(sum(1, 2)).toBe(3);\n});\n```\n\n## Test asynchrone\n\n```javascript\ntest('fetch user', async () => {\n    const user = await fetchUser();\n    expect(user.name).toBe('Jean');\n});\n```\n\n## Mocks\n\n```javascript\nconst mockFn = jest.fn();\nmockFn.mockReturnValue(42);\nexpect(mockFn()).toBe(42);\n```\n\nLes tests automatiques sont essentiels pour la qualite du code.",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee223"
+  },
+  "tags": [
+    "jest",
+    "testing",
+    "javascript"
+  ],
+  "publishedAt": {
+    "$date": "2025-06-23T13:40:00.000Z"
+  },
+  "readingTime": 7,
+  "views": 390,
+  "likes": 31,
+  "featuredImage": "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=800",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee2a8"
+  },
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
+  },
+  "title": "PostgreSQL pour les developpeurs MongoDB",
+  "slug": "postgresql-developpeurs-mongodb",
+  "excerpt": "Passer de NoSQL a SQL sans crainte.",
+  "content": "# PostgreSQL\n\nPostgreSQL est une base de donnees relationnelle (SQL) puissante et open-source.\n\n## Schema\n\n```sql\nCREATE TABLE users (\n    id SERIAL PRIMARY KEY,\n    name VARCHAR(255) NOT NULL,\n    email VARCHAR(255) UNIQUE NOT NULL,\n    created_at TIMESTAMP DEFAULT NOW()\n);\n\nCREATE TABLE posts (\n    id SERIAL PRIMARY KEY,\n    user_id INTEGER REFERENCES users(id),\n    title VARCHAR(255),\n    content TEXT\n);\n```\n\n## Requete\n\n```sql\nSELECT * FROM users WHERE id = 1;\n\nSELECT users.name, posts.title\nFROM users\nJOIN posts ON users.id = posts.user_id;\n```\n\n## Avantages de PostgreSQL\n\n- Integrite referentielle (clues etrangeres)\n- Transactions ACID\n- Requetes complexes (jointures, sous-requetes)\n- Extensible (PostGIS, etc.)\n\nPostgreSQL est un excellent choix pour les donnees relationnelles.",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee223"
+  },
+  "tags": [
+    "postgresql",
+    "sql",
+    "database"
+  ],
+  "publishedAt": {
+    "$date": "2025-06-25T09:30:00.000Z"
+  },
+  "readingTime": 8,
+  "views": 280,
+  "likes": 19,
+  "featuredImage": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee2a9"
+  },
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
+  },
+  "title": "WebSocket : communication temps reel",
+  "slug": "websocket-communication-temps-reel",
+  "excerpt": "Creez des applications interactives avec WebSocket.",
+  "content": "# WebSocket\n\nWebSocket permet une communication bidirectionnelle en temps reel entre le client et le serveur.\n\n## Serveur (Node.js avec Socket.IO)\n\n```javascript\nconst io = require('socket.io')(server);\n\nio.on('connection', (socket) => {\n    console.log('Client connecte');\n    \n    socket.on('chat message', (msg) => {\n        io.emit('chat message', msg);\n    });\n});\n```\n\n## Client\n\n```javascript\nconst socket = io();\n\nsocket.emit('chat message', 'Hello World!');\n\nsocket.on('chat message', (msg) => {\n    console.log('Message recu:', msg);\n});\n```\n\n## Cas d'usage\n\n- Chat en temps reel\n- Notifications push\n- Jeux multijoueurs\n- Collaboration en direct (Google Docs like)\n\nWebSocket est plus rapide que HTTP pour les mises a jour frequentes.",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee224"
+  },
+  "tags": [
+    "websocket",
+    "realtime",
+    "socketio"
+  ],
+  "publishedAt": {
+    "$date": "2025-06-27T14:50:00.000Z"
+  },
+  "readingTime": 7,
+  "views": 470,
+  "likes": 38,
+  "featuredImage": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee2aa"
+  },
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
+  },
+  "title": "Les design patterns en JavaScript",
+  "slug": "design-patterns-javascript",
+  "excerpt": "Ameliorez votre code avec les patterns classiques.",
+  "content": "# Design Patterns en JavaScript\n\nLes design patterns sont des solutions reutilisables a des problemes courants.\n\n## Module Pattern\n\n```javascript\nconst UserModule = (function() {\n    let users = [];\n    \n    return {\n        addUser: (user) => users.push(user),\n        getUsers: () => [...users]\n    };\n})();\n```\n\n## Singleton\n\n```javascript\nclass Database {\n    constructor() {\n        if (!Database.instance) {\n            Database.instance = this;\n        }\n        return Database.instance;\n    }\n}\n```\n\n## Observer Pattern\n\n```javascript\nclass EventEmitter {\n    constructor() {\n        this.events = {};\n    }\n    \n    on(event, listener) {\n        if (!this.events[event]) this.events[event] = [];\n        this.events[event].push(listener);\n    }\n    \n    emit(event, data) {\n        this.events[event]?.forEach(listener => listener(data));\n    }\n}\n```\n\nLes patterns rendent le code plus maintenable et reutilisable.",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee224"
+  },
+  "tags": [
+    "design-patterns",
+    "javascript"
+  ],
+  "publishedAt": {
+    "$date": "2025-06-29T11:00:00.000Z"
+  },
+  "readingTime": 8,
   "views": 530,
   "likes": 41,
-  "featuredImage": "https://picsum.photos/id/20/800/450",
+  "featuredImage": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee2ab"
+  },
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
+  },
+  "title": "Figma : l'outil de design collaboratif",
+  "slug": "figma-outil-design-collaboratif",
+  "excerpt": "Creez des maquettes professionnelles avec Figma.",
+  "content": "# Figma\n\nFigma est l'outil de design UI/UX le plus populaire, entiereement base sur le navigateur.\n\n## Fonctionnalites principales\n\n- Design vectoriel\n- Prototypage interactif\n- Collaboration en temps reel\n- Composants reutilisables\n- Systeme de design\n\n## Raccourcis clavier essentiels\n\n- F : creer une frame (artboard)\n- R : rectangle\n- T : texte\n- P : pen tool\n- K : scale\n\n## Livraison aux developpeurs\n\nFigma permet d'exporter :\n- Les assets (SVG, PNG, JPG)\n- Les couleurs (CSS)\n- Les typographies\n- Les mesures\n\nFigma reduit les frictions entre designers et developpeurs.",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee226"
+  },
+  "tags": [
+    "figma",
+    "design",
+    "ui-ux"
+  ],
+  "publishedAt": {
+    "$date": "2025-07-01T09:30:00.000Z"
+  },
+  "readingTime": 7,
+  "views": 410,
+  "likes": 33,
+  "featuredImage": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=800",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee2ac"
+  },
+  "authorId": {
+    "$oid": "6a7000000000000000000001"
+  },
+  "title": "Vue.js : une alternative a React",
+  "slug": "vuejs-alternative-a-react",
+  "excerpt": "Decouvrez le framework progressif Vue.js.",
+  "content": "# Vue.js\n\nVue.js est un framework JavaScript progressif pour construire des interfaces utilisateur.\n\n## Installation\n\n```html\n<script src=\"https://unpkg.com/vue@3\"></script>\n```\n\n## Composant de base\n\n```javascript\nconst { createApp, ref } = Vue;\n\ncreateApp({\n    setup() {\n        const count = ref(0);\n        return { count };\n    }\n}).mount('#app');\n```\n\n## Template\n\n```html\n<div id=\"app\">\n    <button @click=\"count++\">\n        Clics: {{ count }}\n    </button>\n</div>\n```\n\n## Points forts de Vue\n\n- Courbe d'apprentissage douce\n- Documentation excellente\n- Performance elevee\n- Ecosysteme riche (Vue Router, Pinia)\n\nVue est une excellente alternative a React ou Angular.",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee223"
+  },
+  "tags": [
+    "vuejs",
+    "frontend",
+    "javascript"
+  ],
+  "publishedAt": {
+    "$date": "2025-07-03T11:15:00.000Z"
+  },
+  "readingTime": 7,
+  "views": 380,
+  "likes": 29,
+  "featuredImage": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800",
+  "status": "published"
+},
+{
+  "_id": {
+    "$oid": "6a1b06229e6f717dbadee2ad"
+  },
+  "authorId": {
+    "$oid": "6a7000000000000000000002"
+  },
+  "title": "Svelte : le compilateur qui reinvente le front",
+  "slug": "svelte-compilateur-reinvente-front",
+  "excerpt": "Decouvrez Svelte, une nouvelle facon de construire des interfaces.",
+  "content": "# Svelte\n\nSvelte est un compilateur qui transforme vos composants en code JavaScript vanilla optimal.\n\n## Composant Svelte\n\n```svelte\n<script>\n    let count = 0;\n    \n    function increment() {\n        count += 1;\n    }\n</script>\n\n<button on:click={increment}>\n    Clics: {count}\n</button>\n```\n\n## Avantages de Svelte\n\n- Pas de Virtual DOM\n- Bundle plus leger\n- Reactivite naturelle (aucune syntaxe speciale)\n- Code simple et lisible\n\n## Comparaison\n\n| Framework | Bundle | Runtime |\n|-----------|--------|---------|\n| React | ~40kB | Oui |\n| Vue | ~30kB | Oui |\n| Svelte | ~2kB | Non (compile) |\n\nSvelte gagne en popularite pour sa simplicite et ses performances.",
+  "categoryId": {
+    "$oid": "6a1aea6a9e6f717dbadee223"
+  },
+  "tags": [
+    "svelte",
+    "frontend",
+    "compiler"
+  ],
+  "publishedAt": {
+    "$date": "2025-07-05T13:00:00.000Z"
+  },
+  "readingTime": 7,
+  "views": 340,
+  "likes": 25,
+  "featuredImage": "https://images.unsplash.com/photo-1611162618071-b39a2ec055fb?w=800",
   "status": "published"
 }]

@@ -12,12 +12,14 @@ const staffSchema = new mongoose.Schema({
         enum: ['editor', 'moderator', 'contributor'],
         default: 'contributor'
     },
+    fullName: { type: String },
     bio: { type: String, maxlength: 500 },
     socialLinks: {
         twitter: { type: String },
         github: { type: String },
         linkedin: { type: String }
     },
+    authorAvatar: { type: String, required: false },
     isActive: { type: Boolean, default: true },
     joinedAt: { type: Date, default: Date.now }
 });

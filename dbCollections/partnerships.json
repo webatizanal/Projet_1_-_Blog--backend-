@@ -4,8 +4,8 @@
   },
   "name": "MongoDB Atlas",
   "website": "https://mongodb.com/atlas",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Base de données cloud",
+  "logoUrl": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=200&h=200&fit=crop",
+  "description": "Base de données cloud performante et scalable. Solution de base de données NoSQL leader sur le marché.",
   "type": "sponsor",
   "contactEmail": "partners@mongodb.com",
   "isActive": true,
@@ -22,8 +22,8 @@
   },
   "name": "GitHub",
   "website": "https://github.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Plateforme de développement collaboratif",
+  "logoUrl": "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=200&h=200&fit=crop",
+  "description": "Plateforme de développement collaboratif. Hébergez, review et déployez votre code.",
   "type": "friend",
   "contactEmail": "partners@github.com",
   "isActive": true,
@@ -38,8 +38,8 @@
   },
   "name": "Tailwind CSS",
   "website": "https://tailwindcss.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Framework CSS utilitaire",
+  "logoUrl": "https://images.unsplash.com/photo-1618477388954-7852f32655ec?w=200&h=200&fit=crop",
+  "description": "Framework CSS utilitaire. Créez des interfaces modernes sans quitter votre HTML.",
   "type": "friend",
   "contactEmail": "partners@tailwindcss.com",
   "isActive": true,
@@ -54,8 +54,8 @@
   },
   "name": "Netlify",
   "website": "https://netlify.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Hébergement et fonctions serverless",
+  "logoUrl": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=200&h=200&fit=crop",
+  "description": "Hébergement et fonctions serverless. Déployez vos sites modernes en un clic.",
   "type": "affiliate",
   "contactEmail": "partners@netlify.com",
   "isActive": true,
@@ -70,13 +70,63 @@
   },
   "name": "Figma",
   "website": "https://figma.com",
-  "logoUrl": "./src/assets/article4.jpg",
-  "description": "Outil de design collaboratif",
+  "logoUrl": "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=200&h=200&fit=crop",
+  "description": "Outil de design collaboratif. Créez des maquettes et prototypes en temps réel.",
   "type": "friend",
   "contactEmail": "partners@figma.com",
   "isActive": true,
   "startsAt": {
     "$date": "2025-03-15T00:00:00.000Z"
+  },
+  "endsAt": null
+},
+{
+  "_id": {
+    "$oid": "6a1aea059e6f717dbadee220"
+  },
+  "name": "Vercel",
+  "website": "https://vercel.com",
+  "logoUrl": "https://images.unsplash.com/photo-1627398242454-45a1465c2479?w=200&h=200&fit=crop",
+  "description": "Plateforme de déploiement pour frontend. Next.js, React, Vue et plus.",
+  "type": "affiliate",
+  "contactEmail": "partners@vercel.com",
+  "isActive": true,
+  "startsAt": {
+    "$date": "2025-05-01T00:00:00.000Z"
+  },
+  "endsAt": null
+},
+{
+  "_id": {
+    "$oid": "6a1aea059e6f717dbadee221"
+  },
+  "name": "Stripe",
+  "website": "https://stripe.com",
+  "logoUrl": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?w=200&h=200&fit=crop",
+  "description": "Paiements en ligne pour entreprises. API de paiement moderne et fiable.",
+  "type": "sponsor",
+  "contactEmail": "partners@stripe.com",
+  "isActive": true,
+  "startsAt": {
+    "$date": "2025-06-01T00:00:00.000Z"
+  },
+  "endsAt": {
+    "$date": "2026-05-31T23:59:59.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6a1aea059e6f717dbadee222"
+  },
+  "name": "Cloudflare",
+  "website": "https://cloudflare.com",
+  "logoUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&h=200&fit=crop",
+  "description": "Sécurité, performance et fiabilité pour le web. CDN et protection DDoS.",
+  "type": "friend",
+  "contactEmail": "partners@cloudflare.com",
+  "isActive": true,
+  "startsAt": {
+    "$date": "2025-02-01T00:00:00.000Z"
   },
   "endsAt": null
 }]
