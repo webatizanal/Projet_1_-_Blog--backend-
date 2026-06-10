@@ -1,6 +1,8 @@
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
+const Staff = require('../models/Staff');
+const Comment = require('../models/Comment');
 const Article = require('../models/Article');
 const fs = require('fs');
 const path = require('path');
@@ -209,49 +211,52 @@ exports.tokenCheck = async (req, res, next) => {
  * @route DELETE /api/users/account
  * @requires auth (middleware)
  */
-exports.deleteAccount = async (req, res, next) => {
+exports.deleteAccount = async (req, res) => {
     try {
-        // 1. Vérifier que l'utilisateur est authentifié
+        // 1. Vérifier l'authentification
         if (!req.auth || !req.auth.userId) {
             return res.status(401).json({ error: 'Non authentifié' });
         }
 
         const userId = req.auth.userId;
 
-        // 2. Récupérer l'utilisateur pour vérifier son existence
+        // 2. Vérifier que l'utilisateur existe
         const user = await User.findById(userId);
         if (!user) {
             return res.status(404).json({ error: 'Utilisateur non trouvé' });
         }
 
-        // 3. Supprimer tous les articles écrits par cet utilisateur
-        //    (optionnel selon ton besoin)
-        await Article.deleteMany({ userId: userId });
+        // 3. Supprimer les données associées (sans bloquer si rien n'existe)
+        await Article.deleteMany({ userId: userId }).catch(() => {});
+        await Comment.deleteMany({ authorId: userId }).catch(() => {});
+        await Staff.deleteOne({ userId: userId }).catch(() => {});
 
-        // 4. Supprimer tous les commentaires écrits par cet utilisateur
-        await Comment.deleteMany({ authorId: userId });
-
-        // 5. Si l'utilisateur fait partie du staff, le supprimer aussi
-        await Staff.deleteOne({ userId: userId });
-
-        // 6. Supprimer l'avatar physique (si stocké localement)
-        if (user.avatarUrl && !user.avatarUrl.includes('ui-avatars.com')) {
-            const fs = require('fs');
-            const path = require('path');
-            const filename = path.basename(user.avatarUrl);
-            const avatarPath = path.join(__dirname, '../data_files/img_users', filename);
-            if (fs.existsSync(avatarPath)) {
-                fs.unlinkSync(avatarPath);
+        // 4. Supprimer l'avatar physique (seulement s'il existe et n'est pas une URL externe)
+        if (user.avatarUrl && 
+            !user.avatarUrl.includes('ui-avatars.com') && 
+            !user.avatarUrl.startsWith('http')) {
+            
+            try {
+                const filename = path.basename(user.avatarUrl);
+                const avatarPath = path.join(__dirname, '..', 'data_files', 'img_users', filename);
+                
+                if (fs.existsSync(avatarPath)) {
+                    fs.unlinkSync(avatarPath);
+                }
+            } catch (err) {
+                console.error('Erreur lors de la suppression de l\'avatar:', err.message);
+                // On ne bloque pas la suppression du compte pour autant
             }
         }
 
-        // 7. Supprimer l'utilisateur lui-même
+        // 5. Supprimer l'utilisateur
         await User.findByIdAndDelete(userId);
 
-        // 8. Réponse succès
+        // 6. Réponse succès
         res.status(200).json({ message: 'Compte supprimé avec succès' });
+        
     } catch (error) {
         console.error('Erreur deleteAccount:', error);
-        res.status(500).json({ error: 'Erreur serveur' });
+        res.status(500).json({ error: 'Erreur serveur: ' + error.message });
     }
 };
