@@ -9,12 +9,13 @@ const app = express();
 const userRoutes = require('./routes/userRoutes');
 const articleRoutes = require('./routes/articleRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
+const tagRoutes = require('./routes/tagRoutes');
 const commentRoutes = require('./routes/commentRoutes');
 const newsletterRoutes = require('./routes/newsletterRoutes');
 const partnershipRoutes = require('./routes/partnershipRoutes');
 const staffRoutes = require('./routes/staffRoutes');
 
-// Middlewares
+// Middlewares 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -50,6 +51,7 @@ app.use('/data_files/logo_partners', express.static('data_files/logo_partners'))
 app.use('/api/users', userRoutes);
 app.use('/api/articles', articleRoutes);
 app.use('/api/categories', categoryRoutes);
+app.use('/api/tags', tagRoutes);
 app.use('/api/comments', commentRoutes);
 app.use('/api/newsletter', newsletterRoutes);
 app.use('/api/partnerships', partnershipRoutes);

@@ -88,49 +88,70 @@ exports.login = async (req, res, next) => {
                         token: token,
                         userRole: user.userRole,
                         userName: user.username,
-                        userMail: user.email
+                        userMail: user.email,
+                        userAvatar: user.avatarUrl
                     });
                 })
                 .catch(error => res.status(500).json({ error: error.message }));
         })
         .catch(error => res.status(500).json({ error: error.message }));
-};
+};  
 
 exports.updateAvatar = async (req, res, next) => {
+    console.log('=== DÉBUT updateAvatar ===');
+    
     try {
+        // 1. Vérification de l'utilisateur
         const user = await User.findById(req.auth.userId);
+        
         if (!user) {
             return res.status(404).json({ error: 'Utilisateur non trouvé' });
         }
 
-        let oldImagePath = null;
-        if (user.avatarUrl && !user.avatarUrl.includes('default-avatar.png')) {
-            const oldFilename = path.basename(user.avatarUrl);
-            oldImagePath = path.join(__dirname, '../data_files/img_users', oldFilename);
+        if (!req.file) {
+            return res.status(400).json({ error: 'Aucune image fournie' });
         }
 
-        const newAvatarUrl = `${req.protocol}://${req.get('host')}/data_files/img_users/${req.file.filename}`;
+        // 3. Construction de l'URL
+        const imageUrl = `${req.protocol}://${req.get('host')}/data_files/img_users/${req.file.filename}`;
 
+        // 4. Sauvegarde de l'ancien chemin
+        const lastImage = user.avatarUrl.split('/img_users/')[1] || null;
+        const oldImagePath = path.join(__dirname, '../data_files/img_users', lastImage);
+
+        // 5. Mise à jour de l'utilisateur
         const updatedUser = await User.findByIdAndUpdate(
             req.auth.userId,
-            { avatarUrl: newAvatarUrl },
-            { new: true, runValidators: true }
+            { avatarUrl: imageUrl },
+            { returnDocument: 'after' }
         );
-
-        if (oldImagePath && fs.existsSync(oldImagePath)) {
-            fs.unlinkSync(oldImagePath);
-            console.log(`Ancien avatar supprimé : ${oldImagePath}`);
+    
+        // 6. Suppression de l'ancienne image
+        if (oldImagePath) {
+            console.log('🔍 Vérification existence:', oldImagePath);
+            if (fs.existsSync(oldImagePath)) {
+                try {
+                    fs.unlinkSync(oldImagePath);
+                    console.log('🗑️ Ancien avatar supprimé avec succès');
+                } catch (err) {
+                    console.log('⚠️ Erreur lors de la suppression:', err.message);
+                }
+            } else {
+                console.log('⚠️ Fichier ancien introuvable:', oldImagePath);
+            }
+        } else {
+            console.log('ℹ️ Aucun ancien avatar à supprimer');
         }
 
-        res.status(200).json({ message: 'Avatar mis à jour', user: updatedUser });
+        res.status(200).json({ 
+            message: 'Avatar mis à jour avec succès', 
+            user: updatedUser 
+        });
+
     } catch (error) {
-        if (req.file) {
-            const newImagePath = path.join(__dirname, '../data_files/img_users', req.file.filename);
-            if (fs.existsSync(newImagePath)) fs.unlinkSync(newImagePath);
-        }
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: 'Erreur serveur lors de la mise à jour de l\'avatar' });
     }
-};
+};  
 
 /**
  * @route PUT /api/users/update-password

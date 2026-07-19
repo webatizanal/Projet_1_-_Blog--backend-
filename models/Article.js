@@ -1,11 +1,11 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose');       
 
 const articlesSchema = mongoose.Schema({
     authorId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Staff',
         required: true
-    },
+    }, 
     title: { type: String, required: true, maxlength: 200 },
     slug: { type: String, required: false, unique: true },
     excerpt: { type: String, required: true },
