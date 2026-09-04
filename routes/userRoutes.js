@@ -7,6 +7,8 @@ router.get('/stats', userController.getStats);
 router.post('/signup', userController.signup);
 router.post('/login', userController.login);
 router.put('/update-pwd', auth, userController.updatePwd);
+router.put('/profile-update', auth, userController.updateProfil);
+router.get('/profile-infos', auth, userController.getProfil);
 router.get('/token', auth, userController.tokenCheck);
 router.put('/updateavatar', auth, multer , userController.updateAvatar);
 router.delete('/account', auth, userController.deleteAccount);

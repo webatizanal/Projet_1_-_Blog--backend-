@@ -82,14 +82,15 @@ exports.login = async (req, res, next) => {
                         process.env.JWT_SECRET,       // ← secret
                         { expiresIn: '24h' }          // ← options
                     );
-                    
+                        
                     res.status(200).json({
                         userId: user._id,
                         token: token,
                         userRole: user.userRole,
                         userName: user.username,
                         userMail: user.email,
-                        userAvatar: user.avatarUrl
+                        userAvatar: user.avatarUrl,
+                        createdAt: user.createdAt
                     });
                 })
                 .catch(error => res.status(500).json({ error: error.message }));
@@ -98,17 +99,17 @@ exports.login = async (req, res, next) => {
 };  
 
 exports.updateAvatar = async (req, res, next) => {
-    console.log('=== DÉBUT updateAvatar ===');
     
     try {
-        // 1. Vérification de l'utilisateur
         const user = await User.findById(req.auth.userId);
         
         if (!user) {
+            console.log('❌ Utilisateur non trouvé');
             return res.status(404).json({ error: 'Utilisateur non trouvé' });
         }
 
         if (!req.file) {
+            console.log('❌ Aucun fichier reçu');
             return res.status(400).json({ error: 'Aucune image fournie' });
         }
 
@@ -116,16 +117,24 @@ exports.updateAvatar = async (req, res, next) => {
         const imageUrl = `${req.protocol}://${req.get('host')}/data_files/img_users/${req.file.filename}`;
 
         // 4. Sauvegarde de l'ancien chemin
-        const lastImage = user.avatarUrl.split('/img_users/')[1] || null;
-        const oldImagePath = path.join(__dirname, '../data_files/img_users', lastImage);
+        const lastImage = user.avatarUrl?.split('/img_users/')[1] || null;
+        const oldImagePath = lastImage ? path.join(__dirname, '../data_files/img_users', lastImage) : null;
 
         // 5. Mise à jour de l'utilisateur
         const updatedUser = await User.findByIdAndUpdate(
             req.auth.userId,
             { avatarUrl: imageUrl },
-            { returnDocument: 'after' }
+            { 
+                new: true,
+                runValidators: true
+            }
         );
-    
+
+        if (!updatedUser) {
+            console.log('❌ Mise à jour échouée - utilisateur non trouvé');
+            return res.status(404).json({ error: 'Utilisateur non trouvé lors de la mise à jour' });
+        }
+
         // 6. Suppression de l'ancienne image
         if (oldImagePath) {
             console.log('🔍 Vérification existence:', oldImagePath);
@@ -143,15 +152,22 @@ exports.updateAvatar = async (req, res, next) => {
             console.log('ℹ️ Aucun ancien avatar à supprimer');
         }
 
+        console.log('✅ SUCCÈS - Avatar mis à jour');
         res.status(200).json({ 
             message: 'Avatar mis à jour avec succès', 
             user: updatedUser 
         });
 
     } catch (error) {
-        res.status(500).json({ error: 'Erreur serveur lors de la mise à jour de l\'avatar' });
+        console.error('❌ ERREUR DÉTAILLÉE:', error);
+        console.error('📚 Stack:', error.stack);
+        res.status(500).json({ 
+            error: 'Erreur serveur lors de la mise à jour de l\'avatar',
+            details: error.message,
+            stack: error.stack
+        });
     }
-};  
+};
 
 /**
  * @route PUT /api/users/update-password
@@ -208,6 +224,167 @@ exports.updatePwd = async (req, res, next) => {
         res.status(500).json({ error: 'Erreur serveur' });
     }
 };
+
+
+
+
+/**
+ * Récupérer les infos personnels liés à un membre du staff
+ * GET /api/users/profile-infos
+ */
+exports.getProfil = async (req, res, next) => {
+    try {
+        const userId = req.auth.userId;
+
+        const user = await User.findById(userId).select('email username avatarUrl userRole');
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: 'Utilisateur non trouvé'
+            });
+        }
+
+        const staff = await Staff.findOne({ userId: userId });
+        if (!staff) {
+            return res.status(404).json({
+                success: false,
+                message: 'Profil staff non trouvé'
+            });
+        }
+
+        return res.status(200).json({
+            success: true,
+            data: {
+                email: user.email,
+                username: user.username,
+                avatarUrl: user.avatarUrl || '',
+                userRole: user.userRole,
+                fullName: staff.fullName || '',
+                bio: staff.bio || '',
+                role: staff.role || 'contributor',
+                isActive: staff.isActive,
+                joinedAt: staff.joinedAt,
+                authorAvatar: staff.authorAvatar || '',
+                socialLinks: {
+                    portfolio: staff.socialLinks?.portfolio || '',
+                    github: staff.socialLinks?.github || '',
+                    linkedin: staff.socialLinks?.linkedin || ''
+                }
+            }
+        });
+
+    } catch (error) {
+        console.error('Erreur getProfil:', error);
+        return res.status(500).json({
+            success: false,
+            message: 'Erreur lors de la récupération du profil'
+        });
+    }
+};
+
+/**
+ * Mettre à jour les infos personnels d'un membre du staff
+ * PUT /api/users/profile-update
+ */
+exports.updateProfil = async (req, res, next) => {
+    try {
+        const userId = req.auth.userId;
+        const { username, fullName, bio, portfolio, linkedin, github } = req.body;
+
+        const user = await User.findById(userId);
+        if (!user) {
+            return res.status(404).json({
+                success: false,
+                message: 'Utilisateur non trouvé'
+            });
+        }
+
+        const staff = await Staff.findOne({ userId: userId });
+        if (!staff) {
+            return res.status(404).json({
+                success: false,
+                message: 'Profil staff non trouvé'
+            });
+        }
+
+        // Mettre à jour le username (si fourni)
+        if (username !== undefined) {
+            const trimmedUsername = username.trim();
+            if (trimmedUsername) {
+                const existingUser = await User.findOne({
+                    username: trimmedUsername,
+                    _id: { $ne: userId }
+                });
+                if (existingUser) {
+                    return res.status(400).json({
+                        success: false,
+                        message: 'Ce nom d\'utilisateur est déjà pris'
+                    });
+                }
+                user.username = trimmedUsername;
+                await user.save();
+            }
+        }
+
+        // Mettre à jour le staff (uniquement les champs fournis)
+        if (fullName !== undefined) {
+            staff.fullName = fullName.trim() || '';
+        }
+
+        if (bio !== undefined) {
+            staff.bio = bio.trim() || '';
+        }
+
+        // Mettre à jour les liens sociaux (uniquement les champs fournis)
+        if (portfolio !== undefined || github !== undefined || linkedin !== undefined) {
+            const socialLinks = {
+                portfolio: staff.socialLinks?.portfolio || '',
+                github: staff.socialLinks?.github || '',
+                linkedin: staff.socialLinks?.linkedin || ''
+            };
+
+            if (portfolio !== undefined) socialLinks.portfolio = portfolio.trim() || '';
+            if (github !== undefined) socialLinks.github = github.trim() || '';
+            if (linkedin !== undefined) socialLinks.linkedin = linkedin.trim() || '';
+
+            staff.socialLinks = socialLinks;
+        }
+
+        await staff.save();
+
+        return res.status(200).json({
+            success: true,
+            message: 'Profil mis à jour avec succès',
+            data: {
+                email: user.email,
+                username: user.username,
+                avatarUrl: user.avatarUrl || '',
+                userRole: user.userRole,
+                fullName: staff.fullName || '',
+                bio: staff.bio || '',
+                role: staff.role || 'contributor',
+                isActive: staff.isActive,
+                joinedAt: staff.joinedAt,
+                authorAvatar: staff.authorAvatar || '',
+                socialLinks: {
+                    portfolio: staff.socialLinks?.portfolio || '',
+                    github: staff.socialLinks?.github || '',
+                    linkedin: staff.socialLinks?.linkedin || ''
+                }
+            }
+        });
+
+    } catch (error) {
+        console.error('Erreur updateProfil:', error);
+        return res.status(500).json({
+            success: false,
+            message: 'Erreur lors de la mise à jour du profil'
+        });
+    }
+};
+
+
+
 
 exports.tokenCheck = async (req, res, next) => {
     try {

@@ -15,7 +15,7 @@ const staffSchema = new mongoose.Schema({
     fullName: { type: String },
     bio: { type: String, maxlength: 500 },
     socialLinks: {
-        twitter: { type: String },
+        portfolio: { type: String },
         github: { type: String },
         linkedin: { type: String }
     },
